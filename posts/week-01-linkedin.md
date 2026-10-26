@@ -1,36 +1,37 @@
-# LinkedIn draft — Week 1
+# LinkedIn draft - Week 1
 
-Status: draft for Himanshu's review. Verify the story after your walkthrough. This is personal learning work on public data, not employer work.
+Status: draft for Himanshu's review, not published. Pair with [the five-page carousel](assets/week-01/Week01_LinkedIn_Carousel.pdf). Verify the first-person account after your project walkthrough.
 
 ---
 
-I’m starting a weekly series to get deeper into data engineering for retail wireless products.
+29,932 public telecom complaint records. Which issues would I investigate first?
 
-For the first project, I used AI assistance to build and test a telecom complaints data platform using real public FCC data.
+That's the question behind Week 1 of my retail wireless data engineering series.
 
-The question I wanted to explore: how can a product team turn a public API into a trustworthy signal for deciding what to investigate?
+Using real FCC data for September 2025, I built an AI-assisted pipeline that ingests the API, validates records, stores a versioned warehouse, and publishes tested product-investigation tables.
 
-The first release covers the full path:
+The extract contained 17,280 wireless complaint reports. Comparing two complete weeks - September 15-21 and September 22-28 - revealed three useful findings:
 
-• Paginated API ingestion and source-count reconciliation
-• Raw snapshots with checksums and replay
-• Data contracts and quarantine
-• Typed Parquet and a DuckDB warehouse
-• dbt transformations and quality gates
-• Dagster orchestration and versioned publication
+1. Unwanted calls had the highest volume: 2,017 reports in the later week.
 
-The reliability behavior is the part I’m spending the most time understanding. Testing included deliberate cache corruption and a forced transformation failure. The pipeline had to detect the problem and preserve the last successful data product.
+2. Billing had the largest absolute increase across all 12 issue categories: 925 to 1,041 reports. That's +116, or 12.5%. Billing accounted for 23.7% of the later week's wireless reports.
 
-On the captured September 2025 data, the pipeline processed 29,932 actual complaint records, including 17,280 classified as wireless complaints. All 19 dbt data tests and 19 Python reliability tests passed. The initial complete run took about 68 seconds in the Linux test environment.
+3. Number portability rose from 145 to 184 reports: +39, or 26.9%. The larger percentage came from a much smaller base - a useful reminder to show the underlying counts.
 
-One descriptive signal: billing complaints rose from 925 to 1,041 across two consecutive complete weeks. That gives me a research question. It does not establish a churn increase, a carrier's service quality, or a causal effect. These are self-selected complaints, and the FCC does not verify the allegations.
+Those findings give me two investigation priorities: billing complaint themes and number-transfer friction. They do not establish confirmed service problems, churn, or causes.
 
-My learning focus this week is quality-gated publication: building a candidate, testing it, and promoting it only when the evidence passes.
+An important engineering choice was to compare fully ingested weeks. September's final calendar week was incomplete within this extract, so it was excluded from the comparison.
 
-Next: checkpointed ingestion, source refreshes, and recovery from partial failures.
+The pipeline also had to handle failure. In a labelled test, forcing a dbt failure preserved the last successful data product. All 19 dbt data tests and 19 Python reliability tests passed; the initial complete run took about 68 seconds in the Linux test environment.
 
-This is a personal learning project using public data. It uses no employer data, systems, or proprietary designs.
+My learning focus is connecting dependable engineering to a decision someone can assess. The next step would be independent corroboration, with investigation yield and time-to-detection as process measures. Any product-impact claim needs a separate evaluation.
 
-Repository: https://github.com/Himalytics/wireless-data-engineering
+The attached charts follow the question, findings, engineering evidence, and proposed next step.
 
-#DataEngineering #Telecom #dbt #Dagster #DuckDB #LearningInPublic
+Next week: checkpointed ingestion and recovery.
+
+Personal learning project, built with AI assistance using public data. No employer data or proprietary systems. FCC complaints are self-selected reports; the FCC does not verify their allegations.
+
+Code and builder's guide: https://github.com/Himalytics/wireless-data-engineering
+
+#DataEngineering #Telecom #AnalyticsEngineering #LearningInPublic

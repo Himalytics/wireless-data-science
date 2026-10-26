@@ -8,7 +8,7 @@ This is independently developed personal work. It uses no EchoStar / Boost Mobil
 
 ## Start here
 
-Read [the builder's guide](docs/BUILDERS_GUIDE.md), [the runbook](docs/RUNBOOK.md), and [the measured verification report](reports/VERIFICATION.md). The LinkedIn draft is [here](posts/week-01-linkedin.md). [The series charter](series/CHARTER.md) defines the standard for subsequent releases.
+Read [the builder's guide](docs/BUILDERS_GUIDE.md), [the runbook](docs/RUNBOOK.md), and [the measured verification report](reports/VERIFICATION.md). The results-led [LinkedIn draft](posts/week-01-linkedin.md) pairs with a [five-page visual carousel](posts/assets/week-01/Week01_LinkedIn_Carousel.pdf); the [asset guide](posts/assets/week-01/README.md) includes chart data, alt text, and reproduction commands. [The series charter](series/CHARTER.md) defines the standard for subsequent releases.
 
 **Named new technique: quality-gated, versioned data-product publication.** A candidate warehouse remains private until its contracts and dbt tests pass. Only then does one atomic pointer switch make the new release visible. Failed runs preserve the last good release.
 

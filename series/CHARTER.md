@@ -6,6 +6,8 @@ Owner: Himanshu Jadaun. Scope: personal learning in senior data engineering for 
 
 Each release must contain a new working project/module with a standalone entry point, complete code, a public-data download path, a builder's guide, measured verification evidence, and a LinkedIn draft. Reuse and improve shared infrastructure. The platform must grow in capability rather than restart with disconnected toy notebooks.
 
+LinkedIn deliverables must follow [the storytelling standard](../posts/STORYTELLING_STANDARD.md): quantified findings and engineering results, a coherent narrative, and a mobile-readable PDF/PNG carousel with reproducible charts, source data, and alt text. A stack summary alone is insufficient.
+
 Every project must demonstrate ingestion, contracts/validation, transformation, persistent storage, quality gates, orchestration, recovery/failure handling, documentation, and a product decision with a proposed measurement plan. At least three senior engineering practices and a named new technique must be explicit.
 
 Use observed public data as the analytical foundation. Record publisher, dataset identifier, authoritative source link, licence, retrieval method, extraction bounds, and checksums/version information. Public does not automatically mean observed: fictional/synthetic benchmark sources must be labelled and cannot serve as the sole real-data foundation. Simulations may augment a real source only when clearly labelled in code, documentation, outputs, and posts. Test fault injection is labelled separately and excluded from product results.

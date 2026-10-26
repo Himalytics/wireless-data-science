@@ -14,5 +14,8 @@
   "publication_policy": "Require explicit approval for the specific repository push and post until changed by Himanshu",
   "repository_url": "https://github.com/Himalytics/wireless-data-engineering",
   "week01_upload_authorization": "Original instruction to add the project to GitHub, followed by confirmation that the named destination repository was created",
-  "next_release_publication": "Prepare tested changes for review; preserve the existing specific-approval rule"
+  "next_release_publication": "Prepare tested changes for review; preserve the existing specific-approval rule",
+  "linkedin_storytelling_standard": "posts/STORYTELLING_STANDARD.md",
+  "week01_carousel": "posts/assets/week-01/Week01_LinkedIn_Carousel.pdf",
+  "week01_linkedin_status": "Results-led draft and verified five-page chart carousel ready for review; not posted"
 }

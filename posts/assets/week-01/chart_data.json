@@ -1,0 +1,145 @@
+{
+  "source_dataset": "FCC CGB Consumer Complaints Data 3xyp-aqkj",
+  "source_url": "https://catalog.data.gov/dataset/cgb-consumer-complaints-data",
+  "snapshot_sha256": "8eebab81805b090981ea9c74f7525a7b296594dcc75a2b870f45b112294158ca",
+  "month": "September 2025",
+  "source_rows": 29932,
+  "wireless_rows": 17280,
+  "wireless_share_pct": 57.73085660831217,
+  "comparison": {
+    "previous": "2025-09-15 through 2025-09-21",
+    "current": "2025-09-22 through 2025-09-28",
+    "current_total": 4401,
+    "previous_total": 4195,
+    "total_change_pct": 4.910607866507747
+  },
+  "issues": [
+    {
+      "week_start": "2025-09-22",
+      "issue": "Availability",
+      "current_complaints": 162,
+      "previous_complaints": 127,
+      "change_in_complaints": 35,
+      "change_pct": 27.56,
+      "action": "Investigate increase; validate with independent evidence"
+    },
+    {
+      "week_start": "2025-09-22",
+      "issue": "Availability (including rural call completion)",
+      "current_complaints": 291,
+      "previous_complaints": 267,
+      "change_in_complaints": 24,
+      "change_pct": 8.99,
+      "action": "Investigate increase; validate with independent evidence"
+    },
+    {
+      "week_start": "2025-09-22",
+      "issue": "Billing",
+      "current_complaints": 1041,
+      "previous_complaints": 925,
+      "change_in_complaints": 116,
+      "change_pct": 12.54,
+      "action": "Investigate increase; validate with independent evidence"
+    },
+    {
+      "week_start": "2025-09-22",
+      "issue": "Cramming (unauthorized charges on your phone bill)",
+      "current_complaints": 82,
+      "previous_complaints": 83,
+      "change_in_complaints": -1,
+      "change_pct": -1.2,
+      "action": "Review high-volume issue"
+    },
+    {
+      "week_start": "2025-09-22",
+      "issue": "Equipment",
+      "current_complaints": 367,
+      "previous_complaints": 349,
+      "change_in_complaints": 18,
+      "change_pct": 5.16,
+      "action": "Investigate increase; validate with independent evidence"
+    },
+    {
+      "week_start": "2025-09-22",
+      "issue": "Interference",
+      "current_complaints": 50,
+      "previous_complaints": 49,
+      "change_in_complaints": 1,
+      "change_pct": 2.04,
+      "action": "Investigate increase; validate with independent evidence"
+    },
+    {
+      "week_start": "2025-09-22",
+      "issue": "Interference (including signal jammers)",
+      "current_complaints": 73,
+      "previous_complaints": 56,
+      "change_in_complaints": 17,
+      "change_pct": 30.36,
+      "action": "Investigate increase; validate with independent evidence"
+    },
+    {
+      "week_start": "2025-09-22",
+      "issue": "Number Portability (keeping your number if you change providers)",
+      "current_complaints": 184,
+      "previous_complaints": 145,
+      "change_in_complaints": 39,
+      "change_pct": 26.9,
+      "action": "Investigate increase; validate with independent evidence"
+    },
+    {
+      "week_start": "2025-09-22",
+      "issue": "Privacy",
+      "current_complaints": 96,
+      "previous_complaints": 96,
+      "change_in_complaints": 0,
+      "change_pct": 0.0,
+      "action": "Review high-volume issue"
+    },
+    {
+      "week_start": "2025-09-22",
+      "issue": "Speed",
+      "current_complaints": 35,
+      "previous_complaints": 34,
+      "change_in_complaints": 1,
+      "change_pct": 2.94,
+      "action": "Investigate increase; validate with independent evidence"
+    },
+    {
+      "week_start": "2025-09-22",
+      "issue": "UNKNOWN",
+      "current_complaints": 3,
+      "previous_complaints": 4,
+      "change_in_complaints": -1,
+      "change_pct": -25.0,
+      "action": "Monitor; low volume"
+    },
+    {
+      "week_start": "2025-09-22",
+      "issue": "Unwanted Calls",
+      "current_complaints": 2017,
+      "previous_complaints": 2060,
+      "change_in_complaints": -43,
+      "change_pct": -2.09,
+      "action": "Review high-volume issue"
+    }
+  ],
+  "runtime_observations_seconds": {
+    "live": 67.542,
+    "offline_replay": 51.498
+  },
+  "dbt_tests_passed": 19,
+  "python_tests_passed": 19,
+  "input_sha256": {
+    "issue_priorities.csv": "55531a4238f26494db1086f402a72bcc61acf72bcc1c27e117ce212e83209bdb",
+    "week01_summary.json": "9ad9f0672c67b5ae1ab99f8bb21c0396da8e4dbf88c99f67520287a73213733a",
+    "live_extraction_execution.json": "764dd61ba3df492730dadeb82d3d40581a0d663512b8dc5b498ee177f8321415",
+    "offline_replay_execution.json": "712c47b7f705da243022ed0a5d5124a0a6755ca9f3adaf4ddab05d9766abd37a",
+    "pytest.xml": "5273fb3b484026cf751e4a0a166a45d68d887a02dc0f11774013e89e7989db47"
+  },
+  "limits": [
+    "Unverified self-selected complaint reports",
+    "No subscriber denominator",
+    "No carrier-specific, churn, causal or business-uplift claim",
+    "Runtime observations are not a benchmark"
+  ]
+}
