@@ -82,6 +82,7 @@ def publish(payload):
                "snapshot_sha256": payload["manifest"]["snapshot_sha256"],
                "window_rows_validated": payload["rows"], "warehouse_rows": raw_count,
                "wireless_rows": wireless_count, "cache_hit": payload["cache_hit"],
+               "resumability": payload.get("resumability"),
                "dbt": payload["dbt_results"],
                "top_issues": [dict(zip(("issue", "current_complaints", "previous_complaints", "change", "action"), p)) for p in priorities],
                "limits": ["Complaint counts are not churn or failure rates", "No carrier or subscriber denominator", "Self-selected, unverified reports", "No synthetic production rows", "Local single-writer release protocol; not a distributed warehouse"]}

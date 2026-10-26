@@ -1,22 +1,28 @@
-# Twelve-week data engineering sequence
+# Senior data engineering sequence
 
-This replaces a model-heavy sequence with an engineering-first platform. Every week retains the complete pipeline and adds one substantial capability. Proposed future sources are feasibility gates, not promises that every field, licence, or join already exists. Verify each source before implementation and change the scope transparently if it cannot support the question.
+Himanshu requested a higher difficulty level after finding the baseline easy. Each release must address a substantial correctness, recovery, scaling, deployment, or consumer-contract problem and include measured evidence. A new connector or library alone is insufficient.
 
-| Week | Date | New project/module | Named technique | Data and product decision |
-|---|---|---|---|---|
-| 1 | Oct 26, 2026 | Telecom complaint data product | Quality-gated versioned publication | Observed FCC complaint records; prioritize product-research themes |
-| 2 | Nov 2 | Incremental ingestion and recovery lab | Checkpointed extraction and bounded overlap reconciliation | Real FCC refreshes; detect changes without losing or duplicating observations |
-| 3 | Nov 9 | Geographic reference and market context | Versioned dimensions and geographic-key contracts | Census public geography/population, subject to source checks; contextualize research markets |
-| 4 | Nov 16 | Coverage intelligence ingestion | Spatial joins with coverage/completeness accounting | Verified public FCC mobile coverage release; identify areas for coverage investigation |
-| 5 | Nov 23 | Network experience lake ingestion | Partition pruning and weighted spatial aggregation | Ookla public quarterly tiles, with licence/attribution checks; prioritize network-experience research |
-| 6 | Nov 30 | Warehouse transformation platform | Incremental dbt models and schema evolution | Reuse observed datasets; compare local engine with one approved cloud warehouse; cloud spend optional |
-| 7 | Dec 7 | Event transport and replay system | At-least-once delivery with idempotent consumers | Replay real published records through Kafka; label event timing as replay, not original live telemetry |
-| 8 | Dec 14 | Lakehouse engineering module | Table snapshots, schema evolution, and compaction | Spark with Delta or Iceberg over real partitions; scale measurements tied to observed volume |
-| 9 | Dec 21 | Data reliability and observability | Data SLOs, lineage, and incident recovery | Existing real pipelines; select which data products are fit for use |
-| 10 | Dec 28 | Serving and access layer | Version-consistent APIs and reproducible deployment | Existing real marts; API contracts, auth design, Docker, and consumer compatibility |
-| 11 | Jan 4, 2027 | Public document ingestion platform | Versioned document provenance and retrieval evaluation | Public carrier/FCC documents subject to terms; deduplication, extraction, citations, and test collections |
-| 12 | Jan 11 | Retail wireless intelligence capstone | Cross-pipeline integration and reproducibility audit | Integrated observed sources with valid join grains; one reviewable product-investigation workflow |
+Week 1 now includes the original real-data platform and an implemented crash-recovery reference. The next scheduled release must extend that work, not repeat its checkpoints. Keep a two-hour guided entry path and roughly 8-12 further hours of ownership exercises across the week.
 
-Real FCC complaints cannot be joined to individual churn outcomes without a valid additional source. Aggregate network data cannot establish subscriber-level causal effects. Do not fabricate joins, event histories, customer identities, retention offers, or treatment effects to make the capstone seem integrated.
+| Week | Date | Substantial engineering problem | Required proof |
+|---|---|---|---|
+| 1 | Oct 26, 2026 | Public FCC data platform plus transactional extraction recovery | Complete real extraction, quality-gated publication, actual SIGKILL recovery, HTTP retries, source-version refusal, replay reconciliation |
+| 2 | Nov 2 | Observed version history and incremental/backfill correctness | Real source snapshots; inserted/changed/removed observations; scope-safe deletion handling; corrected-date reconciliation; equivalence to a full rebuild |
+| 3 | Nov 9 | Partitioned orchestration, backfills, and competing workers | Bounded concurrency and source request budget; retry safety; stale-owner rejection or an explicitly scoped local prototype; no duplicate publication |
+| 4 | Nov 16 | Geographic reference and coverage integration | Verified FCC/Census sources; geographic grain and vintage contracts; unmatched joins, boundary cases, coverage and denominator accounting |
+| 5 | Nov 23 | Large public Parquet and spatial query engineering | Real Ookla partitions with licence checks; measured bytes scanned, pruning, weighted aggregation, and a justified execution-plan change |
+| 6 | Nov 30 | Lakehouse transactions and physical layout | Delta or Iceberg chosen for a stated workload; snapshot correctness, schema compatibility, compaction trade-offs, and reproducible measurements |
+| 7 | Dec 7 | Event delivery, replay, and consumer correctness | Kafka replay of observed public records; explicit replay timestamps; duplicate/out-of-order fault scenarios; idempotent sink and compatible schema changes |
+| 8 | Dec 14 | Version-consistent serving and consumer contracts | API/read model with version pinning, access-control checks, release compatibility, and concurrent-reader publication tests |
+| 9 | Dec 21 | Reproducible deployment and operational ownership | Container and infrastructure definitions; secrets/config separation; deploy/rollback evidence on accessible infrastructure; optional cloud budget agreed before paid work |
+| 10 | Dec 28 | Data SLOs and incident response | Freshness/completeness metrics, actionable alerts, deliberately injected incidents, measured detection/recovery, and a blameless incident report |
+| 11 | Jan 4, 2027 | Versioned public-document data infrastructure | Terms-checked public documents; source versions, extraction/deduplication, lineage, incremental reprocessing, and a fixed evaluation set |
+| 12 | Jan 11 | Integrated retail wireless data platform | Valid multi-source joins, repeatable deployment, historical backfill reconciliation, an auditable product-investigation workflow, and documented operating cost/limits |
 
-Predictive/causal modelling may be added later only with an appropriate dataset and a justified product question. Data engineering deliverables must stand on their own. A limited single-machine demonstration should describe its production gaps rather than call itself enterprise production infrastructure.
+Every week includes a named new technique, at least three demonstrated senior practices, an architecture decision with rejected alternatives, adversarial acceptance checks, and a hands-on ownership challenge. Explain which evidence was assistant-generated reference work and which work Himanshu independently reproduced or changed.
+
+Use observed public data, with publisher, exact source, licence, download code, version/hash, period, grain, and limitations. Proposed future sources remain feasibility gates. Do not manufacture subscriber identities, causal links, original streaming telemetry, or large observed volumes. Simulated fault scenarios and controlled replays must remain labelled.
+
+The projected FCC data lacks a row-level update timestamp and a transactional snapshot token. History must represent when a version was observed, not invented business-effective dates. Deletion inference requires a complete validated re-extraction scope. Aggregate network geography is not linked customer churn.
+
+Prefer bounded, reproducible local and CI work until required infrastructure is actually accessible. A local prototype is not a cross-host deployment; prepared Docker or infrastructure files are not evidence that deployment ran. A single runtime observation is not a benchmark. More tools do not substitute for an engineering argument.

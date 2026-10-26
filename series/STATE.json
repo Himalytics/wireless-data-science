@@ -5,7 +5,7 @@
   "timezone": "America/Denver",
   "latest_built_week": 1,
   "next_week": 2,
-  "next_project": "Incremental ingestion and recovery over real FCC records",
+  "next_project": "Observed version history and incremental/backfill correctness on top of crash-recoverable extraction",
   "github_account_verified": "Himalytics",
   "proposed_repository": "wireless-data-engineering",
   "approved_repository": "Himalytics/wireless-data-engineering",
@@ -17,5 +17,12 @@
   "next_release_publication": "Prepare tested changes for review; preserve the existing specific-approval rule",
   "linkedin_storytelling_standard": "posts/STORYTELLING_STANDARD.md",
   "week01_carousel": "posts/assets/week-01/Week01_LinkedIn_Carousel.pdf",
-  "week01_linkedin_status": "Results-led draft and verified five-page chart carousel ready for review; not posted"
+  "week01_linkedin_status": "Results-led draft and verified five-page chart carousel ready for review; not posted",
+  "week01_hardening": {
+    "feature": "Transactional page/cursor checkpoints and actual process-kill recovery",
+    "status": "Built; 10 additional fault/recovery tests and all 29 Python tests passed; real FCC extraction and offline replay verified",
+    "guide": "docs/ADVANCED_CHALLENGE.md",
+    "evidence": "reports/HARDENING_VERIFICATION.md",
+    "ownership_exercises": "Separate payload/control storage; stale-worker fencing; observed change history; measured scaling limits"
+  }
 }

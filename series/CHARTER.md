@@ -16,7 +16,15 @@ Use no EchoStar / Boost Mobile internal data, code, dashboards, customer data, o
 
 Build and run before claiming success. Record environment, executed commands, input scope, actual counts, data-quality results, runtime, failures discovered, and limits. If access or runtime blocks a check, say so; do not invent results. Mac-tested means execution on macOS, not merely Mac installation instructions. A prepared CI workflow is not a passing remote run.
 
-The two-hour first session should cover running and understanding the project. Deeper modifications and exercises can span the rest of the week. Include concepts, architecture, file responsibilities, alternatives, common errors, extension exercises, and interview talking points.
+The two-hour first session should cover running and understanding the project. The advanced track then provides roughly 8-12 hours of deeper implementation, experiments, and a design defense across the week. Include concepts, architecture, file responsibilities, alternatives, common errors, extension exercises, and interview talking points.
+
+## Advanced difficulty gate
+
+Himanshu found the initial baseline easy and requested more depth. Each subsequent release must tackle a substantial state, correctness, recovery, scaling, deployment, or consumer-compatibility problem. A new connector, a notebook, a tool substitution, or another group-by does not constitute a complete weekly increment.
+
+Include explicit acceptance criteria, adversarial checks at meaningful process/network/transaction boundaries, measured engineering behavior, a justified architecture decision with rejected alternatives, and a hands-on ownership challenge. Provide complete reference code while distinguishing assistant-generated implementation from work Himanshu has independently reproduced or changed. Do not claim enterprise readiness or five years of expertise from repository polish.
+
+The first advanced reference is [the crash-recovery protocol](../docs/ADVANCED_CHALLENGE.md). Do not repeat that implementation as Week 2; extend it with observed change history and backfill reconciliation. Constraints and unresolved guarantees must remain explicit.
 
 Choose tools because the workload benefits. Introduce dbt, Dagster/Airflow, DuckDB/Polars, Spark, Delta/Iceberg, Kafka, Docker, and a cloud warehouse progressively. Explain the engineering capability, portability, and complexity trade-offs. Verify any claim about current market demand; do not rank tools by unsupported popularity.
 

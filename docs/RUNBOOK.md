@@ -56,6 +56,8 @@ The reliability suite explicitly injects byte corruption, invalid source fields,
 
 Restarting a run uses a verified completed snapshot if one exists. Week 1 discards incomplete download directories on an ordinary handled exception; it does not resume individual partially downloaded pages. A process crash can leave a `.download-*` directory. Preserve it until investigation is complete; do not interpret it as a valid snapshot.
 
+The advanced `--resumable` path changes extraction recovery: `wireless-de run --resumable --root data/hardened` commits page payloads and the keyset cursor together, verifies committed progress on restart, and resumes only against the same observed source boundary. Use `--offline` only with a COMPLETE session. A source-revision mismatch marks the partial session INVALID and requires explicit `--refresh`. See `docs/ADVANCED_CHALLENGE.md` and ADR 0002 for guarantees and unresolved limits. Baseline commands retain their original behavior.
+
 Do not delete the current release. Retention cleanup is intentionally manual in Week 1: first identify active readers and releases, then remove unused candidates/old versions. Week 2 will introduce checkpoints and more explicit recovery state.
 
 ## Source freshness

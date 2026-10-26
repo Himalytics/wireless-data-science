@@ -1,0 +1,21 @@
+{
+  "dagster_run_id": "92e5719c-f10e-4135-9de7-619a473909d7",
+  "elapsed_seconds": 18.841,
+  "executed_at_utc": "2026-10-26T20:34:36.405903+00:00",
+  "failed_steps": [],
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "run_id": "20261026T203417-b0765793",
+  "settings": {
+    "end": "2025-10-01",
+    "max_pages": 100,
+    "offline": false,
+    "page_size": 5000,
+    "project": "/workspace/scratch/929020c846b9/wireless-data-engineering",
+    "refresh": false,
+    "resumable": true,
+    "root": "/workspace/scratch/929020c846b9/wireless-data-engineering/data/hardened-live",
+    "start": "2025-09-01"
+  },
+  "success": true
+}

@@ -116,6 +116,10 @@ The product decision is which complaint themes deserve research, such as billing
 
 ## Next release
 
-Week 2 adds checkpointed ingestion and change reconciliation over real public source refreshes. Injected late-arrival/change scenarios will be identified as fault tests. We will distinguish `complaint_date`, source-revision observations, and ingestion time instead of inventing customer histories.
+### Advanced track: available now
+
+The [crash-recovery increment and ownership challenges](docs/ADVANCED_CHALLENGE.md) raise the engineering bar. Run `wireless-de run --resumable --root data/hardened` to use transactional page/cursor checkpoints, then `wireless-de run --resumable --offline --root data/hardened` to replay a completed session. Real subprocess SIGKILL tests cover the checkpoint boundary. See [the recovery decision](docs/adr/0002-checkpoint-transaction-boundary.md) and [verification evidence](reports/HARDENING_VERIFICATION.md).
+
+Week 2 now builds change reconciliation and observed version history on top of this recovery baseline. Injected late-arrival/change scenarios will be identified as fault tests. We will distinguish `complaint_date`, source-revision observations, and ingestion time instead of inventing customer histories.
 
 See [the twelve-week sequence](series/ROADMAP.md). The initial stack is chosen to run locally in one sitting; later infrastructure must earn its complexity through an explicit workload.

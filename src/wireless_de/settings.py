@@ -13,6 +13,7 @@ class Settings:
     max_pages: int = 100
     refresh: bool = False
     offline: bool = False
+    resumable: bool = False
 
     def validate(self):
         if date.fromisoformat(self.start) >= date.fromisoformat(self.end):

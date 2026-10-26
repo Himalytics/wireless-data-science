@@ -5,6 +5,7 @@ from dagster import Config, Definitions, RetryPolicy, asset
 from wireless_de.contract import validate_snapshot
 from wireless_de.settings import Settings
 from wireless_de.source import ingest
+from wireless_de.resumable import ingest_resumable
 from wireless_de.warehouse import load_candidate, publish, run_dbt
 
 
@@ -18,13 +19,15 @@ class RunConfig(Config):
     max_pages: int = 100
     refresh: bool = False
     offline: bool = False
+    resumable: bool = False
 
 
 @asset(retry_policy=RetryPolicy(max_retries=1, delay=1))
 def fcc_snapshot(context, config: RunConfig):
     values = config.model_dump()
     work = values.pop("work")
-    result = ingest(Settings(**values).validate())
+    settings = Settings(**values).validate()
+    result = ingest_resumable(settings) if settings.resumable else ingest(settings)
     context.add_output_metadata({"rows": result["manifest"]["expected_rows"], "cache_hit": result["cache_hit"]})
     return {**result, "work": work}
 

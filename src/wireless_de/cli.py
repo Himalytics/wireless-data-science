@@ -49,6 +49,7 @@ def main():
     parser.add_argument("--max-pages", type=int, default=100)
     parser.add_argument("--refresh", action="store_true")
     parser.add_argument("--offline", action="store_true")
+    parser.add_argument("--resumable", action="store_true", help="Use the durable page/cursor checkpoint protocol")
     args = parser.parse_args()
     root = Path(args.root).resolve()
     try:
@@ -60,7 +61,8 @@ def main():
         else:
             result = execute(Settings(project=str(Path(args.project).resolve()), root=str(root),
                 start=args.start, end=args.end, page_size=args.page_size,
-                max_pages=args.max_pages, refresh=args.refresh, offline=args.offline))
+                max_pages=args.max_pages, refresh=args.refresh, offline=args.offline,
+                resumable=args.resumable))
             print(json.dumps(result, indent=2))
     except (RuntimeError, ValueError, OSError) as exc:
         parser.exit(1, f"ERROR: {exc}\n")

@@ -2,6 +2,8 @@
 
 Status: draft for Himanshu's review, not published. Pair with [the five-page carousel](assets/week-01/Week01_LinkedIn_Carousel.pdf). Verify the first-person account after your project walkthrough.
 
+Scope note: this post and carousel describe the initial Week 1 build and its 19 Python tests. The subsequent crash-recovery increment has separate [verification evidence](../reports/HARDENING_VERIFICATION.md), including 29 total Python tests; do not mix the two versions' runtime observations.
+
 ---
 
 29,932 public telecom complaint records. Which issues would I investigate first?
