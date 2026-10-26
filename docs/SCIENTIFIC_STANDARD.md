@@ -29,5 +29,4 @@
 - Save code, an explanatory notebook, input hashes/version, split definitions, configuration, measured metrics, and chart source data. Include Mac installation/run instructions.
 - Execute the main workflow and checks for leakage boundaries, data integrity, metric calculation, and reproducibility. Do not claim execution on an environment that was not actually used.
 - Write a findings/decision report and model card that separate empirical results from assumptions, recommendations, and limits.
-- Visually inspect exported charts and carousel pages. Labels include scope, dates, units, baselines, and uncertainty where relevant.
-- Follow the publication approval rule. A file being generated is not a LinkedIn publication.
+- Visually inspect scientific figures. Labels include scope, dates, units, baselines, and uncertainty where relevant.

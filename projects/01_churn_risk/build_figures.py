@@ -1,25 +1,17 @@
-"""Render all numeric charts and a six-page LinkedIn document from measured results."""
+"""Generate scientific figures, exact chart tables and provenance from evaluated results."""
 import hashlib
 import json
 from pathlib import Path
 
-import fitz
 import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.ticker import PercentFormatter
 import numpy as np
 import pandas as pd
-import reportlab
-from reportlab.lib.colors import HexColor
-from reportlab.lib.utils import ImageReader
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.pdfgen import canvas
 
 HERE = Path(__file__).resolve().parent
 OUT = HERE / "figures"
-POST = HERE.parents[1] / "posts/01_churn_risk"
 NAVY, TEAL, GRAY, GOLD, PAPER = "#142D36", "#087F83", "#5A6C70", "#BE7A22", "#F5F3ED"
 
 
@@ -123,73 +115,7 @@ def charts():
     return m
 
 
-def carousel(m):
-    POST.mkdir(parents=True, exist_ok=True)
-    fonts = Path(reportlab.__file__).parent / "fonts"
-    pdfmetrics.registerFont(TTFont("Vera", str(fonts / "Vera.ttf")))
-    pdfmetrics.registerFont(TTFont("VeraBold", str(fonts / "VeraBd.ttf")))
-    path = POST / "01_churn_risk_carousel.pdf"
-    c = canvas.Canvas(str(path), pagesize=(540,675))
-    c.setTitle("Churn risk: what the validation changed | Himanshu Jadaun")
-    c.setAuthor("Himanshu Jadaun")
-    def text(x, y, value, size=13, font="Vera", color=NAVY):
-        c.setFont(font, size); c.setFillColor(HexColor(color)); c.drawString(x,y,value)
-    def lines(values, y, size=13, leading=20, bold=False, color=NAVY):
-        for value in values:
-            text(36,y,value,size,"VeraBold" if bold else "Vera",color); y -= leading
-    def start(page, title, subtitle):
-        c.setFillColor(HexColor(PAPER)); c.rect(0,0,540,675,fill=1,stroke=0)
-        c.setFillColor(HexColor(TEAL)); c.rect(36,628,34,4,fill=1,stroke=0)
-        text(80,626,"RETAIL WIRELESS DATA SCIENCE / 01",9,"VeraBold",TEAL)
-        lines(title,580,31,39,True)
-        text(36,482,subtitle,11,color=GRAY)
-        c.setStrokeColor(HexColor("#D1D8D5")); c.line(36,58,504,58)
-        text(36,39,"HIMANSHU JADAUN  /  PUBLIC-DATA LEARNING",8,"VeraBold",GRAY)
-        text(480,39,f"{page} / 6",8,color=GRAY)
-        text(36,21,"UCI Iranian Churn (563), CC BY 4.0  |  Analysis: 26 Oct 2026",7.5,color=GRAY)
-    def image(name,y,height):
-        c.drawImage(ImageReader(str(OUT/(name+".png"))),36,y,width=468,height=height,preserveAspectRatio=True,anchor="c",mask="auto")
-    start(1,["83.9% accurate.","Zero churners found."],"An all-no-churn prediction looks accurate on this test set.")
-    image("01_test_class_balance",218,244)
-    lines(["THE QUESTION", "Can a model prioritize a limited review queue", "and produce defensible risk probabilities?"],188,14,23)
-    lines(["3,150 observed source records. 639 held out.","A historical Iranian sample, not U.S. carrier evidence."],104,11,17,color=GRAY)
-    c.showPage()
-    start(2,["Boosting beat the", "logistic baseline."],"Primary models: the same conservative 11-predictor feature set.")
-    image("02_average_precision",210,250)
-    lines(["0.930 AP for boosting; 0.772 for logistic.","95% intervals: 0.881–0.966 and 0.694–0.839."],187,13,21,True)
-    lines(["300 repeated rows prompted grouped splits at every layer.","Model choice used development OOF Brier, before test scoring.","Intervals: 500 profile-cluster resamples, conditional on fitted models."],123,10.5,17,color=GRAY)
-    c.showPage()
-    start(3,["Calibration didn't", "improve this result."],"Same base-learner ensemble, with and without sigmoid calibration.")
-    image("03_reliability",195,270)
-    lines(["Brier: raw 0.0361 to calibrated 0.0372.","Lower is better. Keep the negative finding."],175,13,21,True)
-    lines(["8 fixed probability bins; some bins have few observations.","Brier measures probability error, not calibration alone.","The prespecified calibrated model remains the primary result."],116,10.5,17,color=GRAY)
-    c.showPage()
-    start(4,["64 reviews contained", "63 churn labels."],"At roughly 10% review capacity in the 639-record test set.")
-    image("04_review_capacity",196,266)
-    lines(["61.2% of the 103 churn labels captured.","Random review would capture about 10% on average."],175,13,21,True)
-    lines(["This is ranking and observed label concentration.","It does not establish prevented churn or offer effectiveness.","An intervention needs separate prospective experimental evidence."],116,10.5,17,color=GRAY)
-    c.showPage()
-    start(5,["More fields require", "an availability check."],"Gradient boosting: primary feature set versus source-field sensitivity.")
-    image("05_feature_sensitivity",208,254)
-    lines(["Primary excludes Status and Customer Value.","Their operational construction needs verification."],183,13,21,True)
-    lines(["The source says predictors cover the first 9 months.","Exclusion is a conservative choice, not proof of leakage.","All-field results were ineligible for primary model selection.","Error bars: conditional 95% profile-cluster bootstrap intervals."],126,10.5,16,color=GRAY)
-    c.showPage()
-    start(6,["A promising ranking.", "A bounded conclusion."],"The learning: ranking, probability quality, and impact are different.")
-    steps = [("01", "Audit before modelling", "Repeated profiles changed the validation design."),
-             ("02", "Nest tuning and calibration", "Keep each evaluation fold outside every fit."),
-             ("03", "Make the decision conditional", "Validate prospectively before testing an offer.")]
-    for y,(number,title,body) in zip([421,326,231],steps):
-        text(36,y,number,23,"VeraBold",TEAL)
-        text(88,y+3,title,16,"VeraBold")
-        text(88,y-22,body,10.5,color=GRAY)
-    lines(["NEXT: forecast real, dated telecom complaint volumes.","Code, experiment record, predictions and charts on GitHub:","Himalytics/wireless-data-science"],128,11,20)
-    c.showPage(); c.save()
-    with fitz.open(path) as pdf:
-        for i,page in enumerate(pdf):
-            pix = page.get_pixmap(matrix=fitz.Matrix(2,2), alpha=False)
-            pix.save(POST / f"slide_{i+1:02}.png")
-    return path
-
 
 if __name__ == "__main__":
-    print(carousel(charts()))
+    charts()
+    print("Generated scientific figures and provenance:", OUT)

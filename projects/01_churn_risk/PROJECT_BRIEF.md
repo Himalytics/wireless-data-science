@@ -1,6 +1,6 @@
 # Project 1: can we trust churn-risk probabilities?
 
-Status: built and evaluated October 26, 2026, for the first post today. See [results](RESULTS_REPORT.md), [code and run instructions](README.md), and the [prespecified protocol](experiment_plan.json).
+Status: built and evaluated October 26, 2026. See [results](RESULTS_REPORT.md), [code and run instructions](README.md), and the [prespecified protocol](experiment_plan.json).
 
 ## Product question
 
@@ -35,7 +35,7 @@ Include model/feature ablations, subgroup/error analysis with support counts, an
 
 ## Required outputs
 
-Working Mac-runnable code and an explanatory notebook; source/data card; saved split/configuration and predictions; measured baseline/model comparisons; calibration, ranking, uncertainty, and error-analysis figures; an experiment record; findings report; model card; builder's guide; and a results-led LinkedIn draft with a verified PDF/PNG carousel.
+Working Mac-runnable code and an explanatory notebook; source/data card; saved split/configuration and predictions; measured baseline/model comparisons; calibration, ranking, uncertainty, and error-analysis figures; an experiment record; findings report; model card; builder's guide.
 
 The product conclusion must identify what the evidence supports, where uncertainty changes the recommendation, and what prospective data or experiment would be required before using a retention intervention. A negative or inconclusive model comparison is an acceptable result.
 

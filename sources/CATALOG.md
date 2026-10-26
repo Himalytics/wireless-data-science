@@ -12,5 +12,3 @@ This catalogue supplies starting points. Recheck the current source, licence, ac
 | [UCI Online Retail, ID 352](https://archive.ics.uci.edu/dataset/352/online+retail) | Repeat-purchase/value and recommendation methods | CC BY 4.0; actual UK retail transactions; handle cancellations/returns and customer-selection issues; not wireless transactions |
 
 A review-text source for project 10 will be selected and verified before implementation. Do not fabricate narratives from structured FCC issue labels or assume access to an account-gated dataset.
-
-Historical engineering dataset files and outputs remain in the archive. Their availability does not make them results of a new scientific study.

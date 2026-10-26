@@ -1,0 +1,23 @@
+{
+  "owner": "Himanshu Jadaun",
+  "series": "Retail Wireless Data Science Lab",
+  "discipline": "Data Science",
+  "started_date": "2026-10-26",
+  "repository": "Himalytics/wireless-data-science",
+  "repository_url": "https://github.com/Himalytics/wireless-data-science",
+  "completed_data_science_projects": 1,
+  "last_completed_project": "projects/01_churn_risk",
+  "last_completed_technique": "Nested group-aware probability calibration",
+  "last_completed_checks": [
+    "Executed nested ML study",
+    "Six scientific integrity tests",
+    "Executed explanatory notebook",
+    "Scientific figure and provenance verification"
+  ],
+  "next_project_number": 2,
+  "next_project": "Probabilistic forecasting of telecom complaint volumes",
+  "next_project_brief": "docs/ROADMAP.md",
+  "next_project_status": "Planned; verify source feasibility before implementation",
+  "next_project_build_date": "2026-11-02",
+  "scientific_standard": "docs/SCIENTIFIC_STANDARD.md"
+}

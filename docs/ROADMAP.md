@@ -1,6 +1,6 @@
 # Twelve-project Data Science roadmap
 
-This is a new series starting at project 1. Project 1 was built and evaluated October 26, 2026 for the first post that day. The next scheduled build is project 2 on November 2, 2026. Each release must stand on observed data and a defensible scientific question. Future sources remain feasibility gates until their access, licence, fields, and evaluation suitability have been checked.
+The series started October 26, 2026. Project 1 was built and evaluated October 26, 2026. The next scheduled build is project 2 on November 2, 2026. Each release must stand on observed data and a defensible scientific question. Future sources remain feasibility gates until their access, licence, fields, and evaluation suitability have been checked.
 
 | Project | Planned date | Scientific question | Main technique and evidence |
 |---|---|---|---|

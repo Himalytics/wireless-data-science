@@ -8,3 +8,12 @@ __pycache__/
 **/data/raw/
 **/data/interim/
 **/artifacts/models/
+
+# Private communications and presentation exports are kept outside this repository.
+posts/
+publishing/
+social/
+*linkedin*
+*LinkedIn*
+*carousel*
+slide_*.png

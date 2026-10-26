@@ -17,7 +17,7 @@ The central technique is **nested group-aware probability calibration**. Other s
 | 40–70 min | Read `GroupTunedClassifier`, `fit_calibrated` and the outer loop. | Which observations each fit, tuning search and sigmoid calibration sees. |
 | 70–95 min | Read the prediction table, AP/Brier comparisons and calibration plot. | Ranking differs from probability quality; calibration can fail to improve a score. |
 | 95–115 min | Recalculate the top-64 queue and a cost scenario. | Observed label capture differs from prevented churn or money saved. |
-| 115–120 min | Review the post against the report. | Each public number has a traceable result and a bounded interpretation. |
+| 115–120 min | Defend the findings against the report. | Each reported number has a traceable result and a bounded interpretation. |
 
 Installation time depends on the machine. The full nested study ran in roughly 51 seconds in the recorded Linux environment. These timings are observations and a suggested study plan, not promises about a Mac.
 
@@ -25,7 +25,7 @@ Installation time depends on the machine. The full nested study ran in roughly 5
 
 Follow `README.md` for the exact Mac commands. Main outputs are `results/metrics.json`, `results/test_predictions.csv`, `results/split_assignments.csv`, and a local model at `artifacts/models/selected_model.joblib`. Run the six tests, regenerate the visuals, then execute the notebook. No API key is needed. Pinned dependencies target Python 3.12; a different major Python version may lack compatible wheels.
 
-Successful execution means the publisher bytes match the hash; source/schema checks pass; groups never overlap across evaluated boundaries; probabilities are valid; the saved metrics reproduce from predictions; model selection and thresholds reproduce using development data alone; and all plots/pages render correctly. It does not mean the result is ready for deployment.
+Successful execution means the publisher bytes match the hash; source/schema checks pass; groups never overlap across evaluated boundaries; probabilities are valid; the saved metrics reproduce from predictions; model selection and thresholds reproduce using development data alone; and all scientific plots render correctly. It does not mean the result is ready for deployment.
 
 ## How the files fit together
 
@@ -41,10 +41,9 @@ Successful execution means the publisher bytes match the hash; source/schema che
 | `results/split_assignments.csv` | Every source row’s development/test assignment, profile group, target and outer fold. Row numbers are not subscriber identifiers. |
 | `results/fit_trace.json` | Phase, model, row-count/hash and best inner parameters for 48 tuned submodels. Runtime assertions additionally check row exclusion. |
 | `results/metrics.json` | Recorded environment, source audit, selection, scores, intervals, review and cost results, slices and caveats. |
-| `build_visuals.py` / `figures/` | Creates exact plots, figure CSVs, provenance hashes, a six-page PDF and numbered PNGs. It consumes evaluated outputs and does not refit models. |
+| `build_figures.py` / `figures/` | Creates exact scientific plots, figure CSVs and provenance hashes. It consumes evaluated outputs and does not refit models. |
 | `tests/test_integrity.py` | Checks source/protocol identity, nested grouping, metric reproduction, decision provenance, tie handling and metadata exclusion. |
 | `DATA_CARD.md`, `MODEL_CARD.md`, `RESULTS_REPORT.md` | Source/target audit, intended/unsupported uses, measured results and decision limits. |
-| `../../posts/01_churn_risk/` | The first-person draft, publication assets, captions and alt text. Publishing is a separate user action. |
 
 ## Understand the validation boundaries
 
@@ -117,7 +116,7 @@ For the rest of the week, spend about two hours a day on a substantive extension
 3. **Dependence sensitivity:** compare the retain-all policy with an explicitly defined profile-weighted objective using development data. Preserve conflicting labels and explain what population each weighting estimates. Do not silently drop contradictory records.
 4. **Decision study:** choose review capacities before evaluation and calculate sensitivity to target prevalence and hypothetical error costs. Keep simulated/assumed values labelled and separate from observed source outcomes.
 
-Save the exact change, motivation, measured comparison, uncertainty and what you would do differently. Before publishing the first-person account, be able to reproduce its three numerical findings and explain the calibration result without reading the caption.
+Save the exact change, motivation, measured comparison, uncertainty and what you would do differently. Be able to reproduce the three central numerical findings and explain the calibration result without reading the report.
 
 ## Interview defense
 
