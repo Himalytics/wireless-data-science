@@ -1,9 +1,0 @@
-{
-  "baseline_records": 29932,
-  "hardened_records": 29932,
-  "missing_ids": 0,
-  "extra_ids": 0,
-  "record_hash_mismatches": 0,
-  "ordered_record_identity_sha256": "e757aef423739be8a72d570163a2da4c8d22187fbe9569aa0687c1e01226be10",
-  "scope": "Captured real FCC September 2025 records; baseline and new resumable path"
-}

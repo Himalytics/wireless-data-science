@@ -1,13 +1,9 @@
-# Scheduled build configuration
+# Monday Data Science build
 
-The recurring build automation was created successfully and enabled on October 26, 2026.
+The existing recurring task is repurposed for the Data Science series. Its saved live configuration is authoritative. The schedule is retained: Monday mornings around 9 AM in America/Denver, beginning November 2, 2026, with flexible timing. Build completion depends on analysis and verification.
 
-- Cadence: Monday mornings, beginning **November 2, 2026**.
-- Timezone: **America/Denver**, following local daylight-saving rules.
-- Flexible start window: approximately 9 AM, within one hour of that time. Completion depends on the work and checks, so this is not a guaranteed delivery deadline.
-- Next module: Week 2, checkpointed ingestion and recovery.
-- Work: actually build the next project, execute meaningful checks, update series state, and deliver the complete package, explainer, evidence, product brief, and LinkedIn draft.
-- GitHub: use only the configured, specifically approved repository operation. The configured destination is `Himalytics/wireless-data-engineering`; Week 1 is included there. Future releases retain the existing specific-approval rule.
-- LinkedIn: deliver a draft to Himanshu; direct posting is not configured.
+Each run reads the current charter, scientific standard, roadmap, and state; builds and executes the next Data Science project; delivers code, notebook, builder's guide, findings, model/data cards, actual evaluation results, reproducible charts, and a LinkedIn draft with a PDF/PNG carousel; and updates project state only after successful verification.
 
-The saved automation includes the baseline archive identity and instructions to retrieve the newest release rather than depend on transient local paths. Its live configuration is authoritative if later updated.
+The archived engineering branch, its next-week tasks, and the old engineering ZIP are historical references only. They are not prerequisites, active instructions, or evidence for the new series. No separate engineering automation should be created or retained.
+
+Retain the specific-publication approval rule. LinkedIn delivery remains draft-only unless a posting connection and the applicable approval are both verified.

@@ -1,3 +1,0 @@
-# Optional publishing dependencies; not needed to run the data platform.
-reportlab==4.4.9
-PyMuPDF==1.26.6

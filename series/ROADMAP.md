@@ -1,28 +1,24 @@
-# Senior data engineering sequence
+# Twelve-project Data Science roadmap
 
-Himanshu requested a higher difficulty level after finding the baseline easy. Each release must address a substantial correctness, recovery, scaling, deployment, or consumer-contract problem and include measured evidence. A new connector or library alone is insufficient.
+This is a new series starting at project 1. The first scheduled build is November 2, 2026. Each release must stand on observed data and a defensible scientific question. Future sources remain feasibility gates until their access, licence, fields, and evaluation suitability have been checked.
 
-Week 1 now includes the original real-data platform and an implemented crash-recovery reference. The next scheduled release must extend that work, not repeat its checkpoints. Keep a two-hour guided entry path and roughly 8-12 further hours of ownership exercises across the week.
-
-| Week | Date | Substantial engineering problem | Required proof |
+| Project | Planned date | Scientific question | Main technique and evidence |
 |---|---|---|---|
-| 1 | Oct 26, 2026 | Public FCC data platform plus transactional extraction recovery | Complete real extraction, quality-gated publication, actual SIGKILL recovery, HTTP retries, source-version refusal, replay reconciliation |
-| 2 | Nov 2 | Observed version history and incremental/backfill correctness | Real source snapshots; inserted/changed/removed observations; scope-safe deletion handling; corrected-date reconciliation; equivalence to a full rebuild |
-| 3 | Nov 9 | Partitioned orchestration, backfills, and competing workers | Bounded concurrency and source request budget; retry safety; stale-owner rejection or an explicitly scoped local prototype; no duplicate publication |
-| 4 | Nov 16 | Geographic reference and coverage integration | Verified FCC/Census sources; geographic grain and vintage contracts; unmatched joins, boundary cases, coverage and denominator accounting |
-| 5 | Nov 23 | Large public Parquet and spatial query engineering | Real Ookla partitions with licence checks; measured bytes scanned, pruning, weighted aggregation, and a justified execution-plan change |
-| 6 | Nov 30 | Lakehouse transactions and physical layout | Delta or Iceberg chosen for a stated workload; snapshot correctness, schema compatibility, compaction trade-offs, and reproducible measurements |
-| 7 | Dec 7 | Event delivery, replay, and consumer correctness | Kafka replay of observed public records; explicit replay timestamps; duplicate/out-of-order fault scenarios; idempotent sink and compatible schema changes |
-| 8 | Dec 14 | Version-consistent serving and consumer contracts | API/read model with version pinning, access-control checks, release compatibility, and concurrent-reader publication tests |
-| 9 | Dec 21 | Reproducible deployment and operational ownership | Container and infrastructure definitions; secrets/config separation; deploy/rollback evidence on accessible infrastructure; optional cloud budget agreed before paid work |
-| 10 | Dec 28 | Data SLOs and incident response | Freshness/completeness metrics, actionable alerts, deliberately injected incidents, measured detection/recovery, and a blameless incident report |
-| 11 | Jan 4, 2027 | Versioned public-document data infrastructure | Terms-checked public documents; source versions, extraction/deduplication, lineage, incremental reprocessing, and a fixed evaluation set |
-| 12 | Jan 11 | Integrated retail wireless data platform | Valid multi-source joins, repeatable deployment, historical backfill reconciliation, an auditable product-investigation workflow, and documented operating cost/limits |
+| 1 | Nov 2 | Can we trust telecom churn-risk probabilities? | UCI Iranian Churn; nested model comparison, calibration, uncertainty, feature-availability sensitivity, capacity/cost assumptions |
+| 2 | Nov 9 | How predictable are telecom complaint volumes? | Public FCC dated reports; rolling-origin probabilistic forecasting, seasonal baselines, interval coverage |
+| 3 | Nov 16 | Which markets have distinct network-experience profiles? | Ookla/Census where a valid geographic/vintage join exists; stable clustering, sampling bias, segment interpretation |
+| 4 | Nov 23 | When do forecast uncertainty intervals fail? | Real FCC time periods; conformal or other justified interval methods, coverage by period/group, shift sensitivity |
+| 5 | Nov 30 | Which customers respond because of a campaign? | Public randomized Criteo Uplift data; treatment-effect modelling, baseline policy comparison, uncertainty; explicitly a non-telecom method demonstration |
+| 6 | Dec 7 | How confidently can we evaluate an experiment? | Suitable real randomized data; effect estimates, precision, heterogeneity, and multiple-comparison discipline; no invented event ordering or pre-period fields |
+| 7 | Dec 14 | Can repeat purchases and future customer value be forecast? | UCI Online Retail; probabilistic repeat-purchase/value models, temporal holdout, returns/wholesale sensitivity; explicitly retail-method transfer |
+| 8 | Dec 21 | Does a recommender beat popularity without leakage? | Observed transaction interactions; temporal ranking evaluation, cold-start analysis, coverage, uncertainty |
+| 9 | Dec 28 | Which factors predict geographic network experience? | Real Ookla/Census data; spatially blocked validation, weighted models, error analysis, ecological-inference limits |
+| 10 | Jan 4, 2027 | What can review text reliably reveal about dissatisfaction? | A verified public review dataset; classical NLP versus a justified alternative, error taxonomy, calibration, domain limits |
+| 11 | Jan 11 | When should a model abstain under distribution shift? | Real held-out domains or periods; confidence/coverage trade-offs, robustness and selective prediction |
+| 12 | Jan 18 | Which conclusions are strong enough for a product decision? | A decision-facing capstone integrating validated analyses, uncertainty, evidence gaps, and a proposed follow-up study |
 
-Every week includes a named new technique, at least three demonstrated senior practices, an architecture decision with rejected alternatives, adversarial acceptance checks, and a hands-on ownership challenge. Explain which evidence was assistant-generated reference work and which work Himanshu independently reproduced or changed.
+The portfolio may reuse a dataset for a materially different scientific question. It must not repeat a model tutorial with different styling. Each project introduces a named technique, at least three relevant scientific practices, and an ownership exercise.
 
-Use observed public data, with publisher, exact source, licence, download code, version/hash, period, grain, and limitations. Proposed future sources remain feasibility gates. Do not manufacture subscriber identities, causal links, original streaming telemetry, or large observed volumes. Simulated fault scenarios and controlled replays must remain labelled.
+Public non-telecom experiments or transaction data can teach methods relevant to wireless product decisions. Their measured outcomes remain outcomes of the source domain. Do not label them as carrier retention, wireless purchases, or employer results.
 
-The projected FCC data lacks a row-level update timestamp and a transactional snapshot token. History must represent when a version was observed, not invented business-effective dates. Deletion inference requires a complete validated re-extraction scope. Aggregate network geography is not linked customer churn.
-
-Prefer bounded, reproducible local and CI work until required infrastructure is actually accessible. A local prototype is not a cross-host deployment; prepared Docker or infrastructure files are not evidence that deployment ran. A single runtime observation is not a benchmark. More tools do not substitute for an engineering argument.
+Do not force incompatible datasets into a single customer-level model. In particular, Iranian churn records, U.S. complaint reports, and aggregate network tiles do not share verified subscriber identities. The capstone may present separate evidence streams rather than fabricate a join.

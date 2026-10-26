@@ -1,26 +1,15 @@
-# LinkedIn storytelling standard
+# Data Science LinkedIn standard
 
-Each weekly release must include a results-led post and reproducible visual assets. This standard was requested by Himanshu on October 26, 2026 and applies to the scheduled series.
+Deliver a complete first-person draft, normally 250-400 words, with a scientific story: product question, real source and scope, hypothesis, relevant method, two or three measured findings with uncertainty, what changed the interpretation, and a justified decision or next experiment. Include a concrete learning focus and the next project. Tool lists must not dominate the post.
 
-## Required story
+Pair the draft with a visually inspected 4-6 page mobile-readable PDF carousel and numbered PNG pages, normally 1080 x 1350 pixels. Use at least two meaningful charts when evidence supports them. Appropriate examples include distributions, baseline/model comparisons, calibration or precision-recall curves, uncertainty intervals, forecasting backtests, uplift evaluation, and error/subgroup analysis.
 
-Write a complete first-person draft, usually 250-400 words, with a concrete question, brief relevant build context, two or three quantified findings, the engineering judgment needed to trust them, a defensible product implication, and the next learning step. Tool names support the story rather than occupy most of it. State the dataset period and comparison scope. Use only real measured results and label simulations and fault-injection scenarios.
+Use takeaway headlines, consistent scales, readable labels, source/period/cohort information, baseline counts and units. Explain uncertainty, shortened labels, and aggregation. Separate count changes from rates, percentages from percentage points, predictive association from causal effect, and observed results from hypothetical economics.
 
-Do not invent Himanshu's experiences, independent authorship, emotions, incidents, business outcomes, or what he has already learned. Frame unfamiliar concepts as the learning focus, disclose AI assistance appropriately, and mark the account for review after his walkthrough. Keep the project independent of employer systems.
+Generate exact charts programmatically from executed results. Save plotting code, chart data, provenance, captions, and alt text. Do not use image generation to draw numeric charts. Do not invent a result or suppress a negative/inconclusive comparison to tell a stronger story.
 
-## Required visuals
+Disclose AI assistance appropriately. Do not invent Himanshu's experiences, independent authorship, incidents, or business outcomes. Mark the first-person account for review after his walkthrough. Use no employer data or proprietary systems, and do not imply employer endorsement or measured workplace impact.
 
-- A mobile-readable 4-6 page PDF carousel plus numbered PNG pages, normally 1080 x 1350 pixels.
-- At least two meaningful charts when the evidence supports them: show findings and measured engineering behavior. Choose forms that fit the data; a reliability or cost project may need different visuals from an analytical project.
-- Every page has a takeaway headline and a purpose in the story: question/scope, observed patterns, a comparison or surprise, engineering evidence, and the proposed decision.
-- Record source, observation period, units, cohort/filter, comparison dates, and relevant baselines. Explain any aggregation or shortened labels. Separate count growth from rate changes and percentage points.
-- Use accurate scales, zero baselines for bars, readable labels, consistent comparison units, restrained colors, and explicit sample/volume context. A large percentage on a small base must show the base.
-- Include concise caveats that matter to interpretation. Do not imply causation, churn, customer impact, or current-market conditions from descriptive historical complaints.
+Only write the post after analysis has actually run. The reset contains no Data Science results and therefore no completed result-bearing post. The previous engineering posts and charts are archived and must not be relabelled as Data Science work.
 
-## Reproducibility and review
-
-Generate charts in code from validated outputs. Keep the renderer, exact chart data, source/output identities, captions, alt text, and image/PDF exports with the release. Verify arithmetic, reconciliation, dates, filters, and dimensions; render and inspect every page for clipping and readability before delivery. Do not use AI image generation to draw precise data charts.
-
-If empirical findings are unavailable, state that and chart actual engineering results rather than invent a business discovery. Single runtime observations are not performance benchmarks. Distinguish deliberate failure tests from observed upstream incidents.
-
-Present the draft and visual assets together for review. The existing approval rule for specific repository operations and LinkedIn publication remains in force. A generated draft or connection does not mean a LinkedIn post was published.
+Deliver drafts and assets for review under the existing publication approval rule. Generated files are not evidence that a LinkedIn post was published.
