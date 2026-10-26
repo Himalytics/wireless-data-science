@@ -1,0 +1,17 @@
+name: Scientific integrity
+on: [push, pull_request]
+jobs:
+  integrity:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: projects/01_churn_risk/requirements.txt
+      - run: python -m pip install -r projects/01_churn_risk/requirements.txt
+      - run: python -m unittest discover -s projects/01_churn_risk/tests -v

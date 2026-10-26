@@ -8,8 +8,8 @@ Use takeaway headlines, consistent scales, readable labels, source/period/cohort
 
 Generate exact charts programmatically from executed results. Save plotting code, chart data, provenance, captions, and alt text. Do not use image generation to draw numeric charts. Do not invent a result or suppress a negative/inconclusive comparison to tell a stronger story.
 
-Disclose AI assistance appropriately. Do not invent Himanshu's experiences, independent authorship, incidents, or business outcomes. Mark the first-person account for review after his walkthrough. Use no employer data or proprietary systems, and do not imply employer endorsement or measured workplace impact.
+Keep public writing focused on the scientific question, work, measured evidence and learning. Do not invent Himanshu's experiences, independent authorship, incidents, or business outcomes. Mark the first-person account for review after his walkthrough. Use no employer data or proprietary systems, and do not imply employer endorsement or measured workplace impact.
 
-Only write the post after analysis has actually run. The reset contains no Data Science results and therefore no completed result-bearing post. The previous engineering posts and charts are archived and must not be relabelled as Data Science work.
+Only write the post after analysis has actually run. Project 1 was built and evaluated on October 26, 2026 for the first post that day; later posts follow completed, verified weekly studies. The previous engineering posts and charts are archived and must not be relabelled as Data Science work.
 
 Deliver drafts and assets for review under the existing publication approval rule. Generated files are not evidence that a LinkedIn post was published.

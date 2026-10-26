@@ -1,6 +1,6 @@
 # Project 1: can we trust churn-risk probabilities?
 
-Status: specified, not built or evaluated. First scheduled build: November 2, 2026.
+Status: built and evaluated October 26, 2026, for the first post today. See [results](RESULTS_REPORT.md), [code and run instructions](README.md), and the [prespecified protocol](experiment_plan.json).
 
 ## Product question
 

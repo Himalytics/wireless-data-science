@@ -8,10 +8,11 @@ The approach was reset on **October 26, 2026**. The former Data Engineering seri
 
 ## Current status
 
-- Data Science projects completed: **0**.
-- First project: **Churn risk: discrimination, calibration, and decision sensitivity**.
-- First scheduled build: **Monday, November 2, 2026**, in the existing Monday-morning schedule.
-- Current contents: the new charter, roadmap, scientific quality standard, first-project brief, and reusable report templates. No Data Science model has been built or evaluated in this reset.
+- Data Science projects completed: **1**, built and evaluated **October 26, 2026**.
+- First project: **[Churn risk: discrimination, calibration, and decision sensitivity](projects/01_churn_risk/README.md)** — supervised machine learning on observed public telecom data.
+- Primary test AP: **0.930** versus **0.772** for logistic regression. Calibration did not improve Brier error; the report retains this finding.
+- **[Today’s LinkedIn draft](posts/01_churn_risk/linkedin_post.md)** and **[six-page chart carousel](posts/01_churn_risk/01_churn_risk_carousel.pdf)** are ready for review; they have not been published.
+- Next scheduled project: **telecom complaint-volume forecasting, Monday November 2, 2026**, around 9 AM America/Denver.
 
 Read [the first project brief](projects/01_churn_risk/PROJECT_BRIEF.md), [the roadmap](series/ROADMAP.md), and [the quality standard](series/SCIENTIFIC_STANDARD.md).
 
@@ -40,6 +41,6 @@ Use [the scientific standard](series/SCIENTIFIC_STANDARD.md) and [the storytelli
 
 ## Continuity and publishing
 
-The existing GitHub repository is reused so access and history remain intact. Its URL retains its original name: https://github.com/Himalytics/wireless-data-engineering. The active main branch now contains the Data Science series. The previous engineering tree is retained on `archive/data-engineering-2026-10-26`.
+The GitHub repository is now named **[wireless-data-science](https://github.com/Himalytics/wireless-data-science)**. Its identity and history remain intact, with the Data Science series on main. The previous engineering tree is retained on `archive/data-engineering-2026-10-26`.
 
 The existing recurring task is repurposed for Data Science; it must not continue the archived engineering roadmap. Follow [the current state](series/STATE.json) before selecting the next project. LinkedIn content remains a draft for review, with the existing specific-publication approval rules.

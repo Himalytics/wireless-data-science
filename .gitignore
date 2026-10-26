@@ -5,6 +5,6 @@ __pycache__/
 *.egg-info/
 .env
 .DS_Store
-data/raw/
-data/interim/
-artifacts/models/
+**/data/raw/
+**/data/interim/
+**/artifacts/models/

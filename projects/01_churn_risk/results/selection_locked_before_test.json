@@ -1,0 +1,47 @@
+{
+  "eligible": [
+    "prior",
+    "conservative_logistic",
+    "conservative_gradient_boosting"
+  ],
+  "selected": "conservative_gradient_boosting",
+  "selection_metric": "pooled development OOF Brier",
+  "development_scores": {
+    "prior": {
+      "average_precision": 0.1557389011536303,
+      "roc_auc": 0.49861433483256445,
+      "brier": 0.13174247736661568,
+      "log_loss": 0.4331705045718993,
+      "accuracy_at_0_5": 0.8438868976503385
+    },
+    "conservative_logistic": {
+      "average_precision": 0.7420746762966082,
+      "roc_auc": 0.9249832660766053,
+      "brier": 0.07172758099301414,
+      "log_loss": 0.24399789550842668,
+      "accuracy_at_0_5": 0.9028275587415372
+    },
+    "conservative_gradient_boosting": {
+      "average_precision": 0.8998428491982132,
+      "roc_auc": 0.974968337972282,
+      "brier": 0.03884022794907264,
+      "log_loss": 0.14243333139332362,
+      "accuracy_at_0_5": 0.9446435682994823
+    },
+    "all_logistic": {
+      "average_precision": 0.7496772243665177,
+      "roc_auc": 0.9325339975537172,
+      "brier": 0.07087595850788139,
+      "log_loss": 0.2361309813685507,
+      "accuracy_at_0_5": 0.8940661091198726
+    },
+    "all_gradient_boosting": {
+      "average_precision": 0.9226646394330598,
+      "roc_auc": 0.9794756623744354,
+      "brier": 0.03636016990557815,
+      "log_loss": 0.1313005169993932,
+      "accuracy_at_0_5": 0.9478295499800876
+    }
+  },
+  "timestamp_utc": "2026-10-26T21:17:04.236848+00:00"
+}

@@ -24,4 +24,4 @@ Cover leakage, dependent observations, selection bias, class imbalance, unsuppor
 
 ## Interpretation and ownership
 
-Connect measured findings to a decision and the additional evidence required. Include a substantial exercise that changes one scientific choice and an interview defense based on the actual results. Distinguish assistant-generated reference code from work independently reproduced or modified by Himanshu.
+Connect measured findings to a decision and the additional evidence required. Include a substantial exercise that changes one scientific choice and an interview defense based on the actual results. Document the choices and results Himanshu can reproduce, modify and defend; never invent an independent contribution or learning experience.

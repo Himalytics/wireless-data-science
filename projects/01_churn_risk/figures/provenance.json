@@ -1,0 +1,17 @@
+{
+  "title": "Churn risk: discrimination, calibration, and decision sensitivity",
+  "analysis_date": "2026-10-26",
+  "source": "https://archive.ics.uci.edu/dataset/563/iranian+churn+dataset",
+  "dataset_doi": "10.24432/C5JW3Z",
+  "license": "CC BY 4.0",
+  "scope": "UCI Iranian telecom sample, 639 held-out records / 103 churn labels; not a chronological test",
+  "uncertainty": "95% percentile intervals from 500 held-out profile-cluster bootstrap resamples; conditional on fitted models and this sample",
+  "metric_source_sha256": "762ba3303179b698fb6c7f2686b0397cb3e5988b9fc0434f4e0bd59c0e9c3954",
+  "figures": {
+    "01_test_class_balance.png": "eb8aff7629bb7cc807f73ec5cdda69516c98cacca0afc6d29748e2e6663fbc72",
+    "02_average_precision.png": "2543d45259a79e2d8ff654590a6b4b3f9d91b00a47b71ededd92b3f95239f282",
+    "03_reliability.png": "e149e5aef81701d9fba187679e0c3a6f9983086a0b6c140f98c38c71ae8f4516",
+    "04_review_capacity.png": "5737fd4191d451ec0b1056c698d92292fafab4a7a425afe2839faaa385abeaf6",
+    "05_feature_sensitivity.png": "8ed4e5298f45560172bf59708f925d1396038bc800c4df8ed4ec7993f09d1410"
+  }
+}

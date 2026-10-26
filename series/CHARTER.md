@@ -6,7 +6,7 @@ Owner: Himanshu Jadaun. Reset date: October 26, 2026. Focus: applied Data Scienc
 
 Build a progressively stronger portfolio of empirical reasoning: hypotheses, exploratory analysis, statistical modelling, machine learning, honest evaluation, uncertainty, and defensible decisions. Preserve the user's high difficulty standard. A notebook that loads a CSV and fits one classifier is insufficient.
 
-The first guided session should make the project runnable and understandable in about two hours. Provide deeper experiments and an ownership exercise for additional study across the week, fitting roughly two hours a day. Complete reference code is required, while clearly distinguishing assistant-generated work from changes Himanshu has independently made and defended.
+The first guided session should make the project runnable and understandable in about two hours. Provide deeper experiments and an ownership exercise for additional study across the week, fitting roughly two hours a day. Complete reference code and an ownership exercise are required. Public accounts describe actual methods and findings; personal experiences and independent contributions must be accurate.
 
 ## Real data and appropriate claims
 
@@ -32,7 +32,7 @@ The findings report states what was learned, how reliable it is, what decision i
 
 ## Publication and continuity
 
-Configured repository: `Himalytics/wireless-data-engineering`, reused for the active Data Science series. The name in the URL is historical. The engineering branch and old package are archives only; do not continue their roadmap or reuse their results as Data Science evidence.
+Configured repository: `Himalytics/wireless-data-science`, renamed for the active Data Science series while preserving repository identity and history. The engineering branch and old package are archives only; do not continue their roadmap or reuse their results as Data Science evidence.
 
 The user previously required approval for specific repository operations and individual LinkedIn publication. Preserve that rule until clearly changed. The cleanup/pivot is authorized in the current conversation; future scheduled releases must respect the applicable publication approval. No direct LinkedIn publishing connection is configured, so deliver drafts and visual assets to Himanshu.
 

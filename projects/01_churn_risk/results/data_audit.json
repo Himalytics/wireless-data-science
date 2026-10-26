@@ -1,0 +1,19 @@
+{
+  "source": "https://archive.ics.uci.edu/dataset/563/iranian+churn+dataset",
+  "download": "https://archive.ics.uci.edu/static/public/563/iranian+churn+dataset.zip",
+  "license": "CC BY 4.0",
+  "source_zip_sha256": "696c3a1812267980751f30d19193a1b430ac4ad76172bb089e664c96813ead66",
+  "rows": 3150,
+  "predictors": 13,
+  "churn_labels": 495,
+  "nonchurn_labels": 2655,
+  "churn_prevalence": 0.15714285714285714,
+  "exact_repeated_rows": 300,
+  "repeated_full_predictor_rows": 314,
+  "conservative_profile_groups": 2826,
+  "conflicting_full_profile_groups": 14,
+  "conflicting_conservative_profile_groups": 22,
+  "row_policy": "All observations retained; no unverified duplicate-customer claim",
+  "feature_policy": "Primary excludes status/customer_value as a conservative availability/construction sensitivity choice, not proof of leakage",
+  "missing_cells": 0
+}

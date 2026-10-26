@@ -2,9 +2,9 @@
 
 The former Data Engineering series was retired from the active approach on October 26, 2026 at Himanshu's request. Its complete committed source, reports, tests, guides, draft posts, and visual assets are preserved here:
 
-[Engineering archive branch](https://github.com/Himalytics/wireless-data-engineering/tree/archive/data-engineering-2026-10-26)
+[Engineering archive branch](https://github.com/Himalytics/wireless-data-science/tree/archive/data-engineering-2026-10-26)
 
-[Exact engineering snapshot](https://github.com/Himalytics/wireless-data-engineering/tree/a1c8cda27b682f21ef67fe4a6e51a78699599795)
+[Exact engineering snapshot](https://github.com/Himalytics/wireless-data-science/tree/a1c8cda27b682f21ef67fe4a6e51a78699599795)
 
 The active main branch contains the replacement Data Science series. Git history is retained; no force push or history rewrite is needed. The old recurring task is repurposed, so it must not continue the engineering roadmap.
 
