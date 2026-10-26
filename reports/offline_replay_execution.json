@@ -1,0 +1,20 @@
+{
+  "dagster_run_id": "e5414e5a-9fa7-4089-9058-97c28dfb5d43",
+  "elapsed_seconds": 51.498,
+  "executed_at_utc": "2026-10-26T18:49:44.421841+00:00",
+  "failed_steps": [],
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "python": "3.12.14",
+  "run_id": "20261026T184852-56cea91e",
+  "settings": {
+    "end": "2025-10-01",
+    "max_pages": 100,
+    "offline": true,
+    "page_size": 5000,
+    "project": "/workspace/scratch/929020c846b9/wireless-data-engineering",
+    "refresh": false,
+    "root": "/workspace/scratch/929020c846b9/wireless-data-engineering/data",
+    "start": "2025-09-01"
+  },
+  "success": true
+}

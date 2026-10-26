@@ -1,0 +1,18 @@
+{
+  "owner": "Himanshu Jadaun",
+  "series": "Wireless Data Engineering",
+  "start_date": "2026-10-26",
+  "timezone": "America/Denver",
+  "latest_built_week": 1,
+  "next_week": 2,
+  "next_project": "Incremental ingestion and recovery over real FCC records",
+  "github_account_verified": "Himalytics",
+  "proposed_repository": "wireless-data-engineering",
+  "approved_repository": "Himalytics/wireless-data-engineering",
+  "repository_publication": "Week 1 source and evidence included in this repository",
+  "linkedin_publication": "draft only; specific approval and posting capability required",
+  "publication_policy": "Require explicit approval for the specific repository push and post until changed by Himanshu",
+  "repository_url": "https://github.com/Himalytics/wireless-data-engineering",
+  "week01_upload_authorization": "Original instruction to add the project to GitHub, followed by confirmation that the named destination repository was created",
+  "next_release_publication": "Prepare tested changes for review; preserve the existing specific-approval rule"
+}

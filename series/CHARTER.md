@@ -1,0 +1,31 @@
+# Series charter
+
+Owner: Himanshu Jadaun. Scope: personal learning in senior data engineering for retail wireless product questions. Week 1 starts October 26, 2026. Subsequent builds are intended for Monday mornings in America/Denver; the saved automation is the source of truth for scheduling status.
+
+## Delivery contract
+
+Each release must contain a new working project/module with a standalone entry point, complete code, a public-data download path, a builder's guide, measured verification evidence, and a LinkedIn draft. Reuse and improve shared infrastructure. The platform must grow in capability rather than restart with disconnected toy notebooks.
+
+Every project must demonstrate ingestion, contracts/validation, transformation, persistent storage, quality gates, orchestration, recovery/failure handling, documentation, and a product decision with a proposed measurement plan. At least three senior engineering practices and a named new technique must be explicit.
+
+Use observed public data as the analytical foundation. Record publisher, dataset identifier, authoritative source link, licence, retrieval method, extraction bounds, and checksums/version information. Public does not automatically mean observed: fictional/synthetic benchmark sources must be labelled and cannot serve as the sole real-data foundation. Simulations may augment a real source only when clearly labelled in code, documentation, outputs, and posts. Test fault injection is labelled separately and excluded from product results.
+
+Use no EchoStar / Boost Mobile internal data, code, dashboards, customer data, or proprietary designs; do not imitate internal systems. Keep all public writing framed as personal learning on public sources. Never infer measured employer impact from portfolio outputs.
+
+Build and run before claiming success. Record environment, executed commands, input scope, actual counts, data-quality results, runtime, failures discovered, and limits. If access or runtime blocks a check, say so; do not invent results. Mac-tested means execution on macOS, not merely Mac installation instructions. A prepared CI workflow is not a passing remote run.
+
+The two-hour first session should cover running and understanding the project. Deeper modifications and exercises can span the rest of the week. Include concepts, architecture, file responsibilities, alternatives, common errors, extension exercises, and interview talking points.
+
+Choose tools because the workload benefits. Introduce dbt, Dagster/Airflow, DuckDB/Polars, Spark, Delta/Iceberg, Kafka, Docker, and a cloud warehouse progressively. Explain the engineering capability, portability, and complexity trade-offs. Verify any claim about current market demand; do not rank tools by unsupported popularity.
+
+## Publication rules
+
+GitHub account: **Himalytics**. Configured repository: **Himalytics/wireless-data-engineering** (https://github.com/Himalytics/wireless-data-engineering). Himanshu created this destination after reviewing the Week 1 package and requesting GitHub publication. Week 1 source and evidence are included here. Do not use an unrelated repository as a workaround.
+
+The user previously required explicit approval for the specific repository push and specific LinkedIn post. Preserve that rule until clearly changed. Package tested work and present the exact proposed repository operation and post draft for review. A connection alone is not approval to publish an unreviewed release. Do not merge, force-push, or publish LinkedIn content without the applicable approval.
+
+No direct LinkedIn publishing connection was found during setup. Deliver the complete draft to Himanshu in chat/files. Do not claim it was posted.
+
+## Persistent continuity
+
+Keep a versioned series state, release evidence, and the next-week plan. Use the latest approved GitHub state when it exists, otherwise the most recent saved project archive. Never rely on a transient working directory surviving until the next scheduled run. Read authoritative current state before deciding the next week. If a prior release is incomplete, repair it first and explain the dependency; do not skip evidence gates to maintain a fictional cadence.

@@ -1,0 +1,24 @@
+[{"id":"8116992","date_created":"2025-09-01T00:00:00.000","issue_type":"Phone","method":"Wired","issue":"Unwanted Calls","state":"NC"}
+,{"id":"8116995","date_created":"2025-09-01T00:00:00.000","issue_type":"Phone","method":"Wireless (cell phone/other mobile device)","issue":"Billing","state":"CA"}
+,{"id":"8116997","date_created":"2025-09-01T00:00:00.000","issue_type":"Phone","method":"Wireless (cell phone/other mobile device)","issue":"Unwanted Calls","state":"VA"}
+,{"id":"8117000","date_created":"2025-09-01T00:00:00.000","issue_type":"Phone","method":"Wireless (cell phone/other mobile device)","issue":"Number Portability (keeping your number if you change providers)","state":"OR"}
+,{"id":"8117004","date_created":"2025-09-01T00:00:00.000","issue_type":"Internet","method":"Wireless","issue":"Availability","state":"SC"}
+,{"id":"8117006","date_created":"2025-09-01T00:00:00.000","issue_type":"Internet","method":"Wireless","issue":"Availability","state":"WA"}
+,{"id":"8117009","date_created":"2025-09-01T00:00:00.000","issue_type":"Internet","method":"Cable","issue":"Billing","state":"CA"}
+,{"id":"8117012","date_created":"2025-09-01T00:00:00.000","issue_type":"Internet","method":"Fiber","issue":"Billing","state":"NY"}
+,{"id":"8117014","date_created":"2025-09-01T00:00:00.000","issue_type":"TV","method":"Cable","issue":"Billing","state":"NY"}
+,{"id":"8117016","date_created":"2025-09-01T00:00:00.000","issue_type":"Phone","method":"Wireless (cell phone/other mobile device)","issue":"Availability (including rural call completion)","state":"CA"}
+,{"id":"8117018","date_created":"2025-09-01T00:00:00.000","issue_type":"Internet","method":"Wireless","issue":"Availability","state":"LA"}
+,{"id":"8117024","date_created":"2025-09-01T00:00:00.000","issue_type":"Phone","method":"Wireless (cell phone/other mobile device)","issue":"Number Portability (keeping your number if you change providers)","state":"NJ"}
+,{"id":"8117026","date_created":"2025-09-01T00:00:00.000","issue_type":"Phone","method":"Wireless (cell phone/other mobile device)","issue":"Billing","state":"FL"}
+,{"id":"8117032","date_created":"2025-09-01T00:00:00.000","issue_type":"Internet","method":"Fiber","issue":"Availability","state":"TX"}
+,{"id":"8117033","date_created":"2025-09-01T00:00:00.000","issue_type":"Phone","method":"Wireless (cell phone/other mobile device)","issue":"Billing","state":"VA"}
+,{"id":"8117034","date_created":"2025-09-01T00:00:00.000","issue_type":"Internet","method":"Fiber","issue":"Equipment","state":"OH"}
+,{"id":"8117036","date_created":"2025-09-01T00:00:00.000","issue_type":"Internet","method":"Wireless","issue":"Billing","state":"FL"}
+,{"id":"8117038","date_created":"2025-09-01T00:00:00.000","issue_type":"Phone","method":"Wireless (cell phone/other mobile device)","issue":"Availability (including rural call completion)","state":"WA"}
+,{"id":"8117045","date_created":"2025-09-01T00:00:00.000","issue_type":"Phone","method":"Wireless (cell phone/other mobile device)","issue":"Billing","state":"FL"}
+,{"id":"8117049","date_created":"2025-09-01T00:00:00.000","issue_type":"Phone","method":"Wireless (cell phone/other mobile device)","issue":"Unwanted Calls","state":"NC"}
+,{"id":"8117060","date_created":"2025-09-01T00:00:00.000","issue_type":"Phone","method":"Wireless (cell phone/other mobile device)","issue":"Billing","state":"CA"}
+,{"id":"8117061","date_created":"2025-09-01T00:00:00.000","issue_type":"Phone","method":"Wireless (cell phone/other mobile device)","issue":"Privacy","state":"NC"}
+,{"id":"8117063","date_created":"2025-09-01T00:00:00.000","issue_type":"Internet","method":"Wireless","issue":"Equipment","state":"CA"}
+,{"id":"8117069","date_created":"2025-09-01T00:00:00.000","issue_type":"Internet","method":"Cable","issue":"Availability","state":"CA"}]

@@ -1,0 +1,8 @@
+{
+  "url": "https://opendata.fcc.gov/resource/3xyp-aqkj.json?%24select=id%2Cdate_created%2Cissue_type%2Cmethod%2Cissue%2Cstate&%24where=date_created+%3E%3D+%272025-09-01T00%3A00%3A00%27+AND+date_created+%3C+%272025-10-01T00%3A00%3A00%27&%24order=id+ASC&%24limit=24",
+  "dataset": "FCC CGB Consumer Complaints Data",
+  "license": "Public Domain U.S. Government",
+  "retrieved_at_utc": "2026-10-26T18:48:25.208598+00:00",
+  "sha256": "7b45e3e2c186b1ac673f9eeb4172048cbfe314702f5b5ebfa6268c358a6383a3",
+  "note": "24 real public records, projected to six non-narrative fields; mutations in tests are fault injection only."
+}
