@@ -1,0 +1,8 @@
+{
+  "type": "Post-hoc source-availability diagnostic, not a prespecified model-selection criterion",
+  "threshold": "Observed weekly primary count below 100",
+  "interpretation": "Unusually low reporting is not proof of an outage; no causal attribution",
+  "primary_test_unchanged": true,
+  "retained_test_weeks": 50,
+  "limitation": "No retraining or removal of low weeks from training features; only remaining test targets are scored"
+}

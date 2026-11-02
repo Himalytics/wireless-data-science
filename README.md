@@ -11,9 +11,15 @@ A progressive portfolio of empirical studies: define a product question, audit t
 | Project | Question and technique | Status |
 |---|---|---|
 | [01 · Churn risk](projects/01_churn_risk/README.md) | Can we trust churn-risk probabilities? Nested group-aware tuning and calibration; ranking, probability error and capacity analysis. | Built and evaluated · October 26, 2026 |
-| 02 · Complaint-volume forecasting | How predictable are real, dated telecom complaint volumes? Rolling-origin forecasting, seasonal baselines and uncertainty coverage. | Planned · November 2, 2026; source feasibility pending |
+| [02 · Complaint-volume forecasting](projects/02_complaint_forecasting/README.md) | Can ML improve weekly complaint forecasts? Direct multi-horizon count forecasting, rolling-origin residual intervals, temporal evaluation and block-bootstrap uncertainty. | Built and evaluated · November 2, 2026 |
 
 The [twelve-project roadmap](docs/ROADMAP.md) progresses through forecasting, geographic analysis, uplift, experimentation, customer value, recommendation and NLP. Planned work is not presented as an evaluated result.
+
+## Project 2: measured findings
+
+On **1,259,229 public FCC wireless phone reports across 460 weeks**, the recent four-week mean beat the development-selected Poisson boosting challenger in the final 52-week evaluation: MAE **783.6 versus 1,062.5 complaints/week**. Nominal 80% intervals covered only **69.2% versus 55.8%** of outcomes. The approximate conditional block-bootstrap interval for the error difference crosses zero; the study does not establish universal model superiority. Source revisions, unusual low-reporting weeks and missing subscriber denominators limit interpretation.
+
+[Run Project 2](projects/02_complaint_forecasting/README.md#run-on-a-mac-or-linux) · [Executed notebook](projects/02_complaint_forecasting/analysis.ipynb) · [Findings](projects/02_complaint_forecasting/RESULTS_REPORT.md) · [Builder's guide](projects/02_complaint_forecasting/BUILDERS_GUIDE.md)
 
 ## Project 1: measured findings
 

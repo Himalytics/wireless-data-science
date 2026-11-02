@@ -1,0 +1,35 @@
+{
+  "retrieved_at_utc": "2026-11-02T18:16:52.639057+00:00",
+  "publisher": "Federal Communications Commission, Consumer Inquiries and Complaints Division",
+  "dataset": "CGB - Consumer Complaints Data",
+  "dataset_id": "3xyp-aqkj",
+  "license": "Public Domain U.S. Government (USGOV_WORKS)",
+  "files": {
+    "daily_issues": {
+      "url": "https://opendata.fcc.gov/resource/3xyp-aqkj.json?%24select=date_trunc_ymd%28to_floating_timestamp%28ticket_created%2C%27UTC%27%29%29+as+day%2Cissue%2Ccount%28%2A%29+as+n%2Ccount%28distinct+id%29+as+unique_ids&%24where=ticket_created+%3E%3D+%272018-01-01T00%3A00%3A00Z%27+AND+ticket_created+%3C+%272026-10-26T00%3A00%3A00Z%27+AND+issue_type%3D%27Phone%27+AND+method+in+%28%27Wireless+%28cell+phone%2Fother+mobile+device%29%27%2C%27Wireless%27%29&%24group=day%2Cissue&%24order=day%2Cissue&%24limit=50000",
+      "sha256": "5f83a08d90a2e939e250a4bd156844a7914dc80f6c78cf817f71691ec92c81d0",
+      "rows": 25888
+    },
+    "audit": {
+      "url": "https://opendata.fcc.gov/resource/3xyp-aqkj.json?%24select=count%28%2A%29+as+n%2Ccount%28distinct+id%29+as+unique_ids%2Ccount%28id%29+as+nonnull_ids%2Cmin%28ticket_created%29+as+first%2Cmax%28ticket_created%29+as+last&%24where=ticket_created+%3E%3D+%272018-01-01T00%3A00%3A00Z%27+AND+ticket_created+%3C+%272026-10-26T00%3A00%3A00Z%27+AND+issue_type%3D%27Phone%27+AND+method+in+%28%27Wireless+%28cell+phone%2Fother+mobile+device%29%27%2C%27Wireless%27%29",
+      "sha256": "86db0fda8eb8cb2d61790c5ae1001357ed7400527e70cf7bcc7a30fd3533fb16",
+      "rows": 1
+    },
+    "missing_dates": {
+      "url": "https://opendata.fcc.gov/resource/3xyp-aqkj.json?%24select=count%28%2A%29+as+n&%24where=ticket_created+is+null+AND+issue_type%3D%27Phone%27+AND+method+in+%28%27Wireless+%28cell+phone%2Fother+mobile+device%29%27%2C%27Wireless%27%29",
+      "sha256": "3ab8834fb12e1fe27faa7685163dc93eb4e7a4da93d163848b19c1e372004fa7",
+      "rows": 1
+    },
+    "date_agreement": {
+      "url": "https://opendata.fcc.gov/resource/3xyp-aqkj.json?%24select=count%28%2A%29+as+n&%24where=ticket_created+%3E%3D+%272018-01-01T00%3A00%3A00Z%27+AND+ticket_created+%3C+%272026-10-26T00%3A00%3A00Z%27+AND+issue_type%3D%27Phone%27+AND+method+in+%28%27Wireless+%28cell+phone%2Fother+mobile+device%29%27%2C%27Wireless%27%29+AND+date_trunc_ymd%28date_created%29+%21%3D+date_trunc_ymd%28to_floating_timestamp%28ticket_created%2C%27UTC%27%29%29",
+      "sha256": "e92659a3b9055e2a4c7778d8df9238695132cd031508aa6f048004f565595e96",
+      "rows": 1
+    },
+    "metadata": {
+      "url": "https://opendata.fcc.gov/api/views/3xyp-aqkj.json",
+      "sha256": "8df77654bf6978e23a1fa0dacaa34b3fd5342a3d4af4eee1739cdc4597b38112"
+    }
+  },
+  "source_rows_updated_at": 1793597759,
+  "snapshot_aggregate_sha256": "9196a906f031aed54192edca5955b61a346da1750b9fb773acc14531acc7fb6d"
+}

@@ -1,0 +1,13 @@
+{
+  "verified_date": "2026-11-02",
+  "method": "Compare SHA-256 of saved outputs from authoritative-download run with complete study.py --snapshot refit",
+  "all_compared_files_byte_identical": true,
+  "sha256": {
+    "training_trace.csv": "38321d26ab266642dc7ba2791781b8c9733f3f919fb5dedeaac4c3892b216913",
+    "test_metrics.csv": "b29ac1ecf5da10522008fa9f24adad5f62bf9232df04a0b5dc041301e41478b2",
+    "backtest_predictions.csv": "f071114ef776b3fcaea21542c3da4298ad1b121cb90b3393574201160c724e9f",
+    "sensitivity_predictions.csv": "5dc18bdc25459f5a0492dd1420c21146284baedfa8a53bc769f765af942275cd",
+    "source_daily_issue_counts.csv": "9196a906f031aed54192edca5955b61a346da1750b9fb773acc14531acc7fb6d"
+  },
+  "scope": "Deterministic on this Linux environment and committed input; not a cross-platform bitwise reproducibility claim"
+}

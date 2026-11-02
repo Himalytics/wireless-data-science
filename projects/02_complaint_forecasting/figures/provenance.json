@@ -1,0 +1,14 @@
+{
+  "source_manifest_sha256": "fbc45d0569ae88f6f0b7660ffcdbf8f9209860a872ebe839ab8d9ebfbb084138",
+  "source": "FCC CGB 3xyp-aqkj; Public Domain U.S. Government",
+  "scope": "Submitted wireless phone complaints, UTC ticket_created submission day",
+  "test_period": "2025-10-27 through 2026-10-25",
+  "figures": {
+    "01_history.csv": "2e09b3db1ecd16db7ccda7cdc865021489fe93850983959ebab70bcc12655a56",
+    "02_model_comparison.csv": "3e4d5e7f61037b5751744254bafe3e5ddcf2f9061122248c788d55f5ebd1b432",
+    "03_test_forecasts.csv": "1ab5426556de9dbf3d8155e97e99e204e272365245999db2c19195c3a73bda19",
+    "04_horizon_diagnostics.csv": "05f27fe35e29fd2ca7a7625f1266657951d4e60fd0f251f5237f6e208838f9aa",
+    "05_period_errors.csv": "36cbcb4542fb534795a82a13659e1336d3f6a25cec74b3d9925cda50917f746e"
+  },
+  "uncertainty": "Empirical signed residual quantiles from preceding origins; no coverage guarantee"
+}

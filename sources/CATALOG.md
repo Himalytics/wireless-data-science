@@ -12,3 +12,5 @@ This catalogue supplies starting points. Recheck the current source, licence, ac
 | [UCI Online Retail, ID 352](https://archive.ics.uci.edu/dataset/352/online+retail) | Repeat-purchase/value and recommendation methods | CC BY 4.0; actual UK retail transactions; handle cancellations/returns and customer-selection issues; not wireless transactions |
 
 A review-text source for project 10 will be selected and verified before implementation. Do not fabricate narratives from structured FCC issue labels or assume access to an account-gated dataset.
+
+Project 2 verified FCC dataset `3xyp-aqkj`, public-domain metadata ID `USGOV_WORKS`, API access and documented submission timestamps on November 2, 2026. Its [data card](../projects/02_complaint_forecasting/DATA_CARD.md) records the exact wireless phone scope, UTC date audit, anonymous source snapshot and historical-publication-vintage limitation.

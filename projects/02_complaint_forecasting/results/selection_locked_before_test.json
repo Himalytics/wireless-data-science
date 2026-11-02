@@ -1,0 +1,76 @@
+{
+  "selected_model": "recent_mean_4",
+  "selected_baseline": "recent_mean_4",
+  "selected_ml_candidate": "boost_poisson_deep",
+  "criterion": "Lowest MAE over development targets, no final test selection",
+  "development_metrics": [
+    {
+      "model": "recent_mean_4",
+      "n_forecasts": 104,
+      "n_origins": 26,
+      "mae": 444.94711538461536,
+      "wape": 0.16017480096919348,
+      "bias": 69.72115384615384,
+      "rmse": 791.5893472701224,
+      "coverage80": 0.6538461538461539,
+      "mean_width80": 798.5360576923077,
+      "interval_score80": 2887.0576923076924,
+      "n_interval_forecasts": 104
+    },
+    {
+      "model": "boost_poisson_deep",
+      "n_forecasts": 104,
+      "n_origins": 26,
+      "mae": 520.2126341038579,
+      "wape": 0.18726934561024997,
+      "bias": -95.39701406029347,
+      "rmse": 832.4246472995058,
+      "coverage80": 0.5769230769230769,
+      "mean_width80": 825.8039223063245,
+      "interval_score80": 3186.2314407954477,
+      "n_interval_forecasts": 104
+    },
+    {
+      "model": "boost_poisson_small",
+      "n_forecasts": 104,
+      "n_origins": 26,
+      "mae": 531.5949502678515,
+      "wape": 0.1913668218340483,
+      "bias": -123.12449685617557,
+      "rmse": 826.9845993764375,
+      "coverage80": 0.5769230769230769,
+      "mean_width80": 860.6688108329511,
+      "interval_score80": 3163.7928142794417,
+      "n_interval_forecasts": 104
+    },
+    {
+      "model": "ridge_log",
+      "n_forecasts": 104,
+      "n_origins": 26,
+      "mae": 663.1699139603538,
+      "wape": 0.23873198702622636,
+      "bias": -420.78702322981957,
+      "rmse": 886.7065624770403,
+      "coverage80": 0.6538461538461539,
+      "mean_width80": 987.4005149762586,
+      "interval_score80": 3058.1888776907267,
+      "n_interval_forecasts": 104
+    },
+    {
+      "model": "seasonal_naive_52",
+      "n_forecasts": 104,
+      "n_origins": 26,
+      "mae": 792.625,
+      "wape": 0.28533402561439947,
+      "bias": -447.7019230769231,
+      "rmse": 1089.9289452846137,
+      "coverage80": 0.5096153846153846,
+      "mean_width80": 1053.2836538461538,
+      "interval_score80": 4062.081730769231,
+      "n_interval_forecasts": 104
+    }
+  ],
+  "last_development_target": "2025-10-20",
+  "first_test_origin": "2025-10-27",
+  "protocol_sha256": "cf62f9fc5191494c3509057325496a91370cc427b17732d7b75a01d812493ea6"
+}

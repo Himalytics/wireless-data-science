@@ -1,0 +1,12 @@
+{
+  "comparison": "boost_poisson_deep minus recent_mean_4",
+  "mae_difference": 278.8672196620792,
+  "conditional_95pct_block_bootstrap_ci": [
+    -195.64573104798438,
+    787.0249236465719
+  ],
+  "origins": 13,
+  "block_origins": 3,
+  "resamples": 2000,
+  "limitations": "Small number of origins; conditional on this snapshot and fitted forecasts. No model refitting or data-revision uncertainty; not an IID-fold test."
+}

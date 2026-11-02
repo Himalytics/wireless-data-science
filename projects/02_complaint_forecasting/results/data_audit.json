@@ -1,0 +1,14 @@
+{
+  "observed_complaints": 1259229,
+  "daily_issue_groups": 25888,
+  "weeks": 460,
+  "first_week": "2018-01-01",
+  "last_week": "2026-10-19",
+  "zero_count_days": 8,
+  "duplicate_ids_in_scope": 0,
+  "missing_submission_date_all_time_scope": 0,
+  "date_created_vs_ticket_created_day_mismatches": 118111,
+  "unwanted_call_share": 0.6163684286178288,
+  "snapshot_not_vintage": true,
+  "missing_days_policy": "Reindex full calendar; absent days are assumed zero, not proven ingestion uptime"
+}

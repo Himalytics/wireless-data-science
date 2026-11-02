@@ -5,19 +5,20 @@
   "started_date": "2026-10-26",
   "repository": "Himalytics/wireless-data-science",
   "repository_url": "https://github.com/Himalytics/wireless-data-science",
-  "completed_data_science_projects": 1,
-  "last_completed_project": "projects/01_churn_risk",
-  "last_completed_technique": "Nested group-aware probability calibration",
+  "completed_data_science_projects": 2,
+  "last_completed_project": "projects/02_complaint_forecasting",
+  "last_completed_technique": "Direct multi-horizon count forecasting with rolling-origin residual distributions",
   "last_completed_checks": [
-    "Executed nested ML study",
-    "Six scientific integrity tests",
-    "Executed explanatory notebook",
-    "Scientific figure and provenance verification"
+    "Executed 1824 learned fits across primary and target sensitivity studies",
+    "Eight scientific integrity tests",
+    "Executed eight explanatory notebook code cells",
+    "Five visually inspected scientific figures with exact source tables",
+    "Full frozen-input refit produced identical prediction and metric hashes"
   ],
-  "next_project_number": 2,
-  "next_project": "Probabilistic forecasting of telecom complaint volumes",
+  "next_project_number": 3,
+  "next_project": "Stable geographic network-experience profiles from compatible public Ookla and Census vintages",
   "next_project_brief": "docs/ROADMAP.md",
   "next_project_status": "Planned; verify source feasibility before implementation",
-  "next_project_build_date": "2026-11-02",
+  "next_project_build_date": "2026-11-09",
   "scientific_standard": "docs/SCIENTIFIC_STANDARD.md"
 }
