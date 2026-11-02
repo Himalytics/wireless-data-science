@@ -1,0 +1,7 @@
+# Source-date audit amendment (November 2, 2026)
+
+Version 1.0 initially grouped the source's `date_created` floating calendar field. The data audit found 118,212 day disagreements against the UTC day of `ticket_created` among 1,259,330 records in that preliminary scope. Metadata explicitly describes `ticket_created` as the date the complaint was submitted; `date_created` has no field description. Day disagreements may include timezone handling; they do not establish source errors or falsification.
+
+Version 1.1 therefore uses the documented `ticket_created` timestamp, converted to UTC, for both date filtering and daily grouping. Neither the incident date nor an inferred event time is used. Initial development diagnostics on the calendar-field aggregate were inspected, but no final-test metrics were used to choose this date definition. The preliminary run is not the released experiment. All released predictions, selection and metrics are rebuilt on the amended UTC aggregate. Candidate models, search budget, split dates and scoring rule remain as initially specified. The source-date change is an audit-driven correction, not an attempt to improve a model score.
+
+The source is a current extract with historical submission dates. Historical database vintages and upload timestamps are unavailable. Rolling-origin evaluation here checks model training boundaries, but cannot certify real-time data availability or eliminate source revision bias.

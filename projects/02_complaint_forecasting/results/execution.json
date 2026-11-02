@@ -1,0 +1,20 @@
+{
+  "analysis_date": "2026-11-02",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.39",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "scipy": "1.17.0",
+  "scikit_learn": "1.8.0",
+  "elapsed_seconds": 68.76,
+  "seed": 20261102,
+  "protocol_sha256": "cf62f9fc5191494c3509057325496a91370cc427b17732d7b75a01d812493ea6",
+  "models_executed": [
+    "recent_mean_4",
+    "seasonal_naive_52",
+    "ridge_log",
+    "boost_poisson_small",
+    "boost_poisson_deep"
+  ],
+  "macos_execution": false
+}
