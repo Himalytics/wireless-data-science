@@ -14,3 +14,5 @@ This catalogue supplies starting points. Recheck the current source, licence, ac
 A review-text source for project 10 will be selected and verified before implementation. Do not fabricate narratives from structured FCC issue labels or assume access to an account-gated dataset.
 
 Project 2 verified FCC dataset `3xyp-aqkj`, public-domain metadata ID `USGOV_WORKS`, API access and documented submission timestamps on November 2, 2026. Its [data card](../projects/02_complaint_forecasting/DATA_CARD.md) records the exact wireless phone scope, UTC date audit, anonymous source snapshot and historical-publication-vintage limitation.
+
+Project 3 verified Ookla mobile quarter files 2025 Q4/2026 Q1 and CC BY-NC-SA 4.0 terms on November 9, 2026. Colorado tile centroids join to Census 2024 county boundaries; Vintage 2024 bulk population estimates supply context. The [data card](../projects/03_network_profiles/DATA_CARD.md) records source identities, spatial assignment, support exclusions, sampling and ecological limits. These quarters are historical observations, not a claim of latest carrier performance.

@@ -1,0 +1,18 @@
+{
+  "source": "Speedtest by Ookla Global Fixed and Mobile Network Performance Maps; CC BY-NC-SA 4.0. Census public-domain 2024 context.",
+  "accessed": "2026-11-09",
+  "periods": [
+    "2025Q4",
+    "2026Q1"
+  ],
+  "geography": "Colorado counties; tile centroid assignment",
+  "uncertainty": "Conditional within-county tile bootstrap; not population confidence or unique-subscriber sampling",
+  "csv_sha256": {
+    "05_sensitivity.csv": "1861bcee40cee076336af222b231266ee3dfdb23584f5c5898b6f9340ec19b34",
+    "02_network_profiles.csv": "8d32521e69bb48e8c23f4d5fc8bcdb8c90f296379c9e732cd1bb04cb219b5c86",
+    "06_population_context.csv": "40c9c042bed6eb306d2aab1db7364a9008e4744243ea1b1f4183364c6da07230",
+    "03_membership_stability.csv": "0b5b935531cb76ed9424fd84a68e88ccdd522cbaa5a257c6306d2968158f9524",
+    "04_quarter_transfer.csv": "e9a90dddbc1df1a5080aaddcce3122252c6488ac49e8e7e2072108da61d0bce7",
+    "01_profile_map.csv": "da04178cbf8f6cca1a5ad62608d0e6cae55a99710ac692972d0da97b66acaec6"
+  }
+}

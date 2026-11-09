@@ -5,7 +5,7 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest]
-        project: [01_churn_risk, 02_complaint_forecasting]
+        project: [01_churn_risk, 02_complaint_forecasting, 03_network_profiles]
     runs-on: ${{ matrix.os }}
     steps:
       - uses: actions/checkout@v4

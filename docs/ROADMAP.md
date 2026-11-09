@@ -1,12 +1,12 @@
 # Twelve-project Data Science roadmap
 
-The series started October 26, 2026. Projects 1 and 2 were built and evaluated October 26 and November 2, 2026. The next scheduled build is project 3 on November 9, 2026. Each release must stand on observed data and a defensible scientific question. Future sources remain feasibility gates until their access, licence, fields, and evaluation suitability have been checked.
+The series started October 26, 2026. Projects 1-3 were built and evaluated October 26, November 2 and November 9, 2026. The next scheduled build is project 4 on November 16, 2026. Each release must stand on observed data and a defensible scientific question. Future sources remain feasibility gates until their access, licence, fields, and evaluation suitability have been checked.
 
 | Project | Planned date | Scientific question | Main technique and evidence |
 |---|---|---|---|
 | 1 | Oct 26, 2026 (built) | Can we trust telecom churn-risk probabilities? | UCI Iranian Churn; nested model comparison, calibration, uncertainty, feature-availability sensitivity, capacity/cost assumptions |
 | [2](../projects/02_complaint_forecasting/README.md) | Nov 2, 2026 (built) | How predictable are telecom complaint volumes? | Observed FCC wireless phone reports; direct multi-horizon count forecasting, rolling-origin residual intervals, block-bootstrap uncertainty; negative ML result retained |
-| 3 | Nov 9 | Which markets have distinct network-experience profiles? | Ookla/Census where a valid geographic/vintage join exists; stable clustering, sampling bias, segment interpretation |
+| [3](../projects/03_network_profiles/README.md) | Nov 9, 2026 (built) | Which observed county network profiles are stable enough to describe? | Ookla mobile 2025 Q4/2026 Q1 with Census 2024 context; conditional bootstrap clustering stability, weighting sensitivity, frozen temporal transfer and sampling limits |
 | 4 | Nov 16 | When do forecast uncertainty intervals fail? | Real FCC time periods; conformal or other justified interval methods, coverage by period/group, shift sensitivity |
 | 5 | Nov 23 | Which customers respond because of a campaign? | Public randomized Criteo Uplift data; treatment-effect modelling, baseline policy comparison, uncertainty; explicitly a non-telecom method demonstration |
 | 6 | Nov 30 | How confidently can we evaluate an experiment? | Suitable real randomized data; effect estimates, precision, heterogeneity, and multiple-comparison discipline; no invented event ordering or pre-period fields |

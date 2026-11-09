@@ -1,0 +1,3 @@
+variant,counties,same_profile_fraction,ari,method
+equal_tile,51,0.8627450980392157,0.5082595367847411,"Frozen primary scaler and centroids; changing aggregation, not reselecting K"
+minimum_5_tests_per_tile,23,0.9130434782608695,0.5472518108223263,"Frozen primary scaler and centroids; changing aggregation, not reselecting K"

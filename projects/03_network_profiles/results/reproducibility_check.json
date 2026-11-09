@@ -1,0 +1,13 @@
+{
+  "date": "2026-11-09",
+  "method": "Complete repeated study from the same hashed input subsets; SHA-256 comparisons of saved CSV outputs",
+  "all_compared_files_identical": true,
+  "sha256": {
+    "county_profiles.csv": "391f673c6577e1b84f4fc8b912e480b14b3503a79b5115911ba059a4eac81f66",
+    "bootstrap_stability.csv": "96d168625f4680e7ee25163f90514d1f2e0e3adbfc3ab49eef793a4438b3de3f",
+    "temporal_assignments.csv": "77ba43f5e9cc592f29539b005a7e0b4b2ae2522ffb7834997fecc6bf3bdc6c0f",
+    "aggregation_sensitivity.csv": "b6ab2b882daa40498e20ca3fb7facce5c8003c4e9cb1b81e36cb6c5027e4c57f",
+    "matched_tile_assignments.csv": "02ec5a24334d8a5315fda28f9aee6fa872201f96d025d62a39b23dc2180cd86a"
+  },
+  "scope": "Same Linux environment and source snapshot; not a cross-platform bitwise claim"
+}

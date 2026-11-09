@@ -1,0 +1,69 @@
+{
+  "retrieved_at_utc": "2026-11-09T16:07:46.819272+00:00",
+  "files": {
+    "counties": {
+      "url": "https://www2.census.gov/geo/tiger/GENZ2024/shp/cb_2024_us_county_500k.zip",
+      "sha256": "da4051717caec55c75e3748c3608c2a3dbde8d1ff401bbaf4f952e3c3fb63ef1",
+      "bytes": 11626066,
+      "headers": {
+        "ETag": null,
+        "Last-Modified": "Thu, 10 Apr 2025 16:26:02 GMT",
+        "Content-Length": "11626066",
+        "x-amz-version-id": null
+      }
+    },
+    "population": {
+      "url": "https://www2.census.gov/programs-surveys/popest/datasets/2020-2024/counties/totals/co-est2024-alldata.csv",
+      "sha256": "abcc8720d669e793bbfdcd440eeec37a78db3b452adbe4ccd1eadf7c72b522b9",
+      "bytes": 1769182,
+      "headers": {
+        "ETag": null,
+        "Last-Modified": "Thu, 13 Mar 2025 12:38:39 GMT",
+        "Content-Length": "1769182",
+        "x-amz-version-id": null
+      }
+    },
+    "2025Q4": {
+      "url": "https://ookla-open-data.s3.amazonaws.com/parquet/performance/type=mobile/year=2025/quarter=4/2025-10-01_performance_mobile_tiles.parquet",
+      "sha256": "715d7b6b30c9f3ae0e2a98e9e27508fa288a653a24414dbba7b8eb4c76f205b8",
+      "bytes": 182319554,
+      "headers": {
+        "ETag": "\"9d568aa5d7a56dc68cb6b718bfb95077-22\"",
+        "Last-Modified": "Sat, 03 Jan 2026 00:12:25 GMT",
+        "Content-Length": "182319554",
+        "x-amz-version-id": "l1qHiUg91_j22PKVfZH6EOQjVkTvVXX."
+      }
+    },
+    "2026Q1": {
+      "url": "https://ookla-open-data.s3.amazonaws.com/parquet/performance/type=mobile/year=2026/quarter=1/2026-01-01_performance_mobile_tiles.parquet",
+      "sha256": "aeb2a6402b29f4e06563771947a2b7c911b1f1be9571bc84b6ba4398ae5c2651",
+      "bytes": 175330099,
+      "headers": {
+        "ETag": "\"a2a2c8cd8111cf7ae0e65f4c6d2dac02-21\"",
+        "Last-Modified": "Mon, 13 Apr 2026 19:04:39 GMT",
+        "Content-Length": "175330099",
+        "x-amz-version-id": "2JZWb2EBlOI2TEt.Wcqs21nVEvxVqcVv"
+      }
+    },
+    "ookla_readme": {
+      "url": "https://raw.githubusercontent.com/teamookla/ookla-open-data/master/README.md",
+      "sha256": "551ee9d499b3c7e40a6779d60ffb68bcf27942056b819f18a8ee0e55e442465f",
+      "bytes": 14893,
+      "headers": {
+        "ETag": "\"58599c1d876508a9591948b948868722f6d22371c2d8e41602cf6cbb24e3d99a\"",
+        "Last-Modified": null,
+        "Content-Length": "14893",
+        "x-amz-version-id": null
+      }
+    }
+  },
+  "ookla_license": "CC BY-NC-SA 4.0",
+  "census_license": "U.S. Government public domain",
+  "api_fallback": "Census API returned missing-key redirect; official bulk population estimates used instead of ACS. No API key or private source required.",
+  "snapshot_hashes": {
+    "county_boundaries.geojson": "bbed78ca2e195b8d0fc6c4aac6f207c87bb42a1a7db9e1db5247da4d06676854",
+    "county_context.csv": "1bb7b734755959408592ce6b9980a595d47f29d3bbb1ae28614513644c697037",
+    "tiles_2025Q4.csv.gz": "35cf9bdeb43befb2d59ebf11b827f1424ea77f6ad2c69b8d1cdbb00ffec28d2c",
+    "tiles_2026Q1.csv.gz": "d44c81daf81a016bfa71313d23a175704ebb7bcbddd741162ef416a30e2812c1"
+  }
+}

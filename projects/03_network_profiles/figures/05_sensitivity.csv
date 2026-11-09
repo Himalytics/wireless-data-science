@@ -1,0 +1,5 @@
+check,same_fraction,counties
+Equal-tile weighting,0.8627450980392157,51
+Tiles with 5+ tests,0.9130434782608696,23
+"Next quarter, all tiles",0.8372093023255814,43
+"Next quarter, matched tiles",0.8387096774193549,31

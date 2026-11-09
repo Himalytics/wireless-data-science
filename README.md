@@ -12,8 +12,15 @@ A progressive portfolio of empirical studies: define a product question, audit t
 |---|---|---|
 | [01 · Churn risk](projects/01_churn_risk/README.md) | Can we trust churn-risk probabilities? Nested group-aware tuning and calibration; ranking, probability error and capacity analysis. | Built and evaluated · October 26, 2026 |
 | [02 · Complaint-volume forecasting](projects/02_complaint_forecasting/README.md) | Can ML improve weekly complaint forecasts? Direct multi-horizon count forecasting, rolling-origin residual intervals, temporal evaluation and block-bootstrap uncertainty. | Built and evaluated · November 2, 2026 |
+| [03 · Network profiles](projects/03_network_profiles/README.md) | Do observed county network profiles survive resampling, weighting changes and a later quarter? Unsupervised clustering, conditional bootstrap stability and frozen temporal transfer. | Built and evaluated · November 9, 2026 |
 
 The [twelve-project roadmap](docs/ROADMAP.md) progresses through forecasting, geographic analysis, uplift, experimentation, customer value, recommendation and NLP. Planned work is not presented as an evaluated result.
+
+## Project 3: measured findings
+
+Observed Ookla mobile tiles identify two profiles among **51 eligible Colorado counties**. Conditional tile-bootstrap membership is below 80% for **12 counties**, and equal-tile weighting changes **7 assignments**. The frozen model retains **36/43** next-quarter labels, but only **6/12** in the smaller profile. These descriptive profiles support further measurement, with uncertainty flags; they do not establish subscriber coverage or carrier quality. Data: Ookla **CC BY-NC-SA 4.0**, Census public-domain 2024 context.
+
+[Run Project 3](projects/03_network_profiles/README.md#run-on-a-mac-or-linux) · [Executed notebook](projects/03_network_profiles/analysis.ipynb) · [Findings](projects/03_network_profiles/RESULTS_REPORT.md) · [Builder's guide](projects/03_network_profiles/BUILDERS_GUIDE.md)
 
 ## Project 2: measured findings
 

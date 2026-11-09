@@ -1,0 +1,44 @@
+GEOID,NAME,profile,next_profile,same_profile
+8001,Adams,1,1,True
+8003,Alamosa,1,1,True
+8005,Arapahoe,1,1,True
+8007,Archuleta,0,0,True
+8013,Boulder,1,1,True
+8014,Broomfield,1,1,True
+8015,Chaffee,0,1,False
+8019,Clear Creek,1,1,True
+8029,Delta,1,1,True
+8031,Denver,1,1,True
+8035,Douglas,1,1,True
+8037,Eagle,1,1,True
+8039,Elbert,1,1,True
+8041,El Paso,1,1,True
+8043,Fremont,1,1,True
+8045,Garfield,1,1,True
+8047,Gilpin,0,0,True
+8049,Grand,1,1,True
+8051,Gunnison,1,1,True
+8055,Huerfano,0,1,False
+8059,Jefferson,1,1,True
+8067,La Plata,0,0,True
+8069,Larimer,1,1,True
+8071,Las Animas,0,0,True
+8073,Lincoln,1,1,True
+8075,Logan,0,1,False
+8077,Mesa,1,1,True
+8081,Moffat,1,1,True
+8083,Montezuma,0,0,True
+8085,Montrose,1,1,True
+8087,Morgan,1,1,True
+8089,Otero,1,1,True
+8091,Ouray,0,1,False
+8093,Park,0,1,False
+8097,Pitkin,1,1,True
+8099,Prowers,1,1,True
+8101,Pueblo,1,1,True
+8107,Routt,0,0,True
+8113,San Miguel,0,1,False
+8117,Summit,1,1,True
+8119,Teller,1,1,True
+8123,Weld,1,1,True
+8125,Yuma,1,0,False

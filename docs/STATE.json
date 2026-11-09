@@ -5,20 +5,20 @@
   "started_date": "2026-10-26",
   "repository": "Himalytics/wireless-data-science",
   "repository_url": "https://github.com/Himalytics/wireless-data-science",
-  "completed_data_science_projects": 2,
-  "last_completed_project": "projects/02_complaint_forecasting",
-  "last_completed_technique": "Direct multi-horizon count forecasting with rolling-origin residual distributions",
+  "completed_data_science_projects": 3,
+  "last_completed_project": "projects/03_network_profiles",
+  "last_completed_technique": "Bootstrap-stable unsupervised segmentation with frozen temporal transfer",
   "last_completed_checks": [
-    "Executed 1824 learned fits across primary and target sensitivity studies",
+    "Executed source-audited county segmentation, 200 bootstrap refits, aggregation sensitivity and frozen-quarter transfer",
     "Eight scientific integrity tests",
     "Executed eight explanatory notebook code cells",
-    "Five visually inspected scientific figures with exact source tables",
-    "Full frozen-input refit produced identical prediction and metric hashes"
+    "Six visually inspected scientific figures with exact source tables",
+    "Complete repeated fit produced identical assignment and bootstrap CSV hashes"
   ],
-  "next_project_number": 3,
-  "next_project": "Stable geographic network-experience profiles from compatible public Ookla and Census vintages",
+  "next_project_number": 4,
+  "next_project": "Forecast interval reliability under temporal shift on observed FCC reports",
   "next_project_brief": "docs/ROADMAP.md",
   "next_project_status": "Planned; verify source feasibility before implementation",
-  "next_project_build_date": "2026-11-09",
+  "next_project_build_date": "2026-11-16",
   "scientific_standard": "docs/SCIENTIFIC_STANDARD.md"
 }

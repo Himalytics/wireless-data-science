@@ -1,0 +1,49 @@
+{
+  "selected_k": 2,
+  "counties": 51,
+  "criterion": "Maximum development silhouette subject to each cluster having at least five counties; retain no-segmentation interpretation if silhouette below 0.25",
+  "selected_silhouette": 0.4197987310929368,
+  "segmentation_gate_passed": true,
+  "fitted_quarter": "2025Q4",
+  "replication_used_for_selection": false,
+  "feature_order": [
+    "download_mbps",
+    "upload_mbps",
+    "latency_ms"
+  ],
+  "scaler_mean": [
+    5.296711325955985,
+    3.07030656411331,
+    3.597787238243368
+  ],
+  "scaler_scale": [
+    0.5178201553213739,
+    0.42528536262587396,
+    0.3215216556031854
+  ],
+  "centroids_original_units": [
+    [
+      115.76831586697072,
+      11.530886409548737,
+      45.440714475419206
+    ],
+    [
+      243.62311677561252,
+      25.454579664271293,
+      32.342375430507744
+    ]
+  ],
+  "centroids_standardized": [
+    [
+      -1.036111775701365,
+      -1.2746971853899698,
+      0.7476613136097432
+    ],
+    [
+      0.3920422935086239,
+      0.48231785393134263,
+      -0.2828988754199028
+    ]
+  ],
+  "protocol_sha256": "195980d9e2a927bc9d2fa6c74c71600420d528f3a3aad45c06394ded0074320e"
+}
