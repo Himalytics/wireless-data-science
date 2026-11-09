@@ -1,0 +1,22 @@
+{
+  "development_counties": 51,
+  "later_eligible_counties": 45,
+  "selected_k": 2,
+  "silhouette": 0.4197987310929368,
+  "bootstrap_ari_median": 0.630679149224054,
+  "bootstrap_ari_conditional_95pct_range": [
+    0.3569572854802124,
+    0.918113436332715
+  ],
+  "counties_membership_frequency_ge_0_8": 39,
+  "ward_vs_kmeans_ari": 0.8426896977174584,
+  "replication_common_counties": 43,
+  "replication_same_profile_count": 36,
+  "replication_same_profile_fraction": 0.8372093023255814,
+  "replication_ari": 0.3947721179624665,
+  "matched_tiles": 3294,
+  "matched_tile_counties": 31,
+  "matched_tile_same_profile_fraction": 0.8387096774193549,
+  "matched_tile_ari": 0.16436273154547967,
+  "bootstrap_scope": "Conditional tile-resampling distribution, not a population confidence interval; spatial dependence and within-tile test variability omitted"
+}

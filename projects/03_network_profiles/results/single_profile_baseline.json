@@ -1,0 +1,10 @@
+{
+  "statewide_county_median": {
+    "download_mbps": 225.9662962962963,
+    "upload_mbps": 22.133698355601236,
+    "latency_ms": 33.153225806451616
+  },
+  "single_profile_standardized_sse": 153.0,
+  "selected_inertia": 90.14140897933636,
+  "warning": "In-sample reconstruction falls mechanically with K; not an out-of-sample prediction gain. K=1 silhouette is undefined."
+}

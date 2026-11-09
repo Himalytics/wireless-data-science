@@ -1,0 +1,18 @@
+{
+  "2025Q4": {
+    "bbox_tiles": 7942,
+    "invalid_metric_tiles": 2,
+    "assigned_colorado_tiles": 7937,
+    "unassigned_after_validation": 3,
+    "tests": 33640,
+    "sum_tile_device_counts_not_unique_people": 12572
+  },
+  "2026Q1": {
+    "bbox_tiles": 7316,
+    "invalid_metric_tiles": 2,
+    "assigned_colorado_tiles": 7312,
+    "unassigned_after_validation": 2,
+    "tests": 32102,
+    "sum_tile_device_counts_not_unique_people": 11622
+  }
+}
