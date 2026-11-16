@@ -4,6 +4,8 @@
 
 A progressive portfolio of empirical studies: define a product question, audit the observations, compare justified methods, quantify uncertainty and explain the decision the evidence supports. Each project includes runnable Python, an executed notebook, saved evaluation results, reproducible scientific figures and a detailed builder's guide.
 
+**Project 04 · Forecast interval reliability.** At four weeks, rolling and adaptive calibration both covered 42 of 54 evaluation weeks. The adaptive intervals averaged 602 more reports in width. [Study and run instructions](projects/04_interval_reliability/README.md) · [Findings](projects/04_interval_reliability/RESULTS_REPORT.md) · [Executed notebook](projects/04_interval_reliability/analysis.ipynb)
+
 [Projects](#projects) · [Run Project 1](#run-project-1) · [Roadmap](docs/ROADMAP.md) · [Scientific standard](docs/SCIENTIFIC_STANDARD.md) · [Sources](sources/CATALOG.md)
 
 ## Projects

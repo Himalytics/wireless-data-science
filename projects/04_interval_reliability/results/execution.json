@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14",
+  "platform": "Linux-6.18.57-x86_64-with-glibc2.41",
+  "source_manifest_sha256": "039151f6a7af339e92e705b69027bc9cc23571de4a5ab9f2d9da8fc85ddeec41",
+  "figure_hashes": {
+    "overall.csv": "cfbae600c5e21d2d5454b9ab85177b342a148168255598a5de238a4818b76ae2",
+    "timeline_chart_data.csv": "86f56a13ba578ac9d31bb6ff2f1c2419e3d1fd08c98d8f6c55831ca061e2d093",
+    "coverage.png": "f7ddc58394026d6060d2a9fed706e2b449e9f85eddd15991a7dc805799ae6b42",
+    "timeline.png": "343fca3f392f2205b2632106dba801603e6cd6b34341af2a68f7fa99ea11d53a"
+  }
+}

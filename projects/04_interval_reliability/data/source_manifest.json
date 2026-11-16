@@ -1,0 +1,24 @@
+{
+  "retrieved_at_utc": "2026-11-16T16:33:22.993601+00:00",
+  "publisher": "FCC Consumer and Governmental Affairs Bureau",
+  "dataset_id": "3xyp-aqkj",
+  "licence": "USGOV_WORKS",
+  "source_rows_updated_at": 1794807100,
+  "metadata": {
+    "url": "https://opendata.fcc.gov/api/views/3xyp-aqkj.json",
+    "sha256": "e2f619d3017c4e9a8e5aa3fcf508a4155fbc572d1184631df31be1b66357b83c"
+  },
+  "daily_query": {
+    "url": "https://opendata.fcc.gov/resource/3xyp-aqkj.json?%24select=date_trunc_ymd%28to_floating_timestamp%28ticket_created%2C%27UTC%27%29%29+AS+day%2Ccount%28%2A%29+AS+n%2Csum%28case%28issue%3D%27Unwanted+Calls%27%2C1%2Ctrue%2C0%29%29+AS+unwanted&%24where=issue_type%3D%27Phone%27+AND+method+in+%28%27Wireless+%28cell+phone%2Fother+mobile+device%29%27%2C%27Wireless%27%29+AND+ticket_created+%3E%3D+%272018-01-01T00%3A00%3A00Z%27+AND+ticket_created+%3C+%272026-11-09T00%3A00%3A00Z%27&%24group=date_trunc_ymd%28to_floating_timestamp%28ticket_created%2C%27UTC%27%29%29&%24order=day&%24limit=5000",
+    "sha256": "29ec59b414ba58ff72451375e66aed84ba69f36709ca00ff90c2e1dbbf18a3d0"
+  },
+  "audit_query": {
+    "url": "https://opendata.fcc.gov/resource/3xyp-aqkj.json?%24select=count%28%2A%29+AS+n%2Ccount%28distinct+id%29+AS+ids&%24where=issue_type%3D%27Phone%27+AND+method+in+%28%27Wireless+%28cell+phone%2Fother+mobile+device%29%27%2C%27Wireless%27%29+AND+ticket_created+%3E%3D+%272018-01-01T00%3A00%3A00Z%27+AND+ticket_created+%3C+%272026-11-09T00%3A00%3A00Z%27",
+    "sha256": "065197ccd349869207450c928163b6ac3471fc9560b440c45cdf4790e92970b7"
+  },
+  "snapshot_sha256": "2c300ec315322d0fa015239f6a35a204264e1e87f2a2b75d1ac0f69eb852c337",
+  "counts": 1280589,
+  "distinct_tickets": 1280589,
+  "absent_calendar_days": 8,
+  "scope": "issue_type='Phone' AND method in ('Wireless (cell phone/other mobile device)','Wireless') AND ticket_created >= '2018-01-01T00:00:00Z' AND ticket_created < '2026-11-09T00:00:00Z'"
+}
