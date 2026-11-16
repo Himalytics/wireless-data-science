@@ -1,0 +1,19 @@
+{
+  "date": "2026-11-16",
+  "start": "2018-01-01",
+  "end_exclusive": "2026-11-09",
+  "evaluation_start": "2025-10-27",
+  "development_start": "2023-01-02",
+  "horizons": [1, 4],
+  "alpha": 0.2,
+  "rolling_window": 52,
+  "adaptive_gains": [0.01, 0.03, 0.06],
+  "alpha_bounds": [0.04, 0.45],
+  "feedback_lag_sensitivity": 2,
+  "bootstrap_block_weeks": [4, 8],
+  "bootstrap_draws": 2000,
+  "seed": 20261116,
+  "hypothesis": "Adaptive interval calibration reduces undercoverage relative to a frozen residual reference, but additional width may offset the improvement.",
+  "selection": "Choose gain by mean development interval score pooled across horizons. Compare methods on identical target weeks using interval score, coverage, width and directional misses.",
+  "limits": "Retrospective current-snapshot evaluation. Project 2 described some of the same historical weeks. No pristine prospective holdout or coverage guarantee."
+}
