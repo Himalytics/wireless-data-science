@@ -16,3 +16,17 @@ jobs:
           cache-dependency-path: projects/${{ matrix.project }}/requirements.txt
       - run: python -m pip install -r projects/${{ matrix.project }}/requirements.txt
       - run: python -m unittest discover -s projects/${{ matrix.project }}/tests -v
+  uplift-integrity:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: projects/05_uplift_policy/requirements-lock.txt
+      - run: python -m pip install -r projects/05_uplift_policy/requirements-lock.txt
+      - run: python -m unittest discover -s projects/05_uplift_policy -p 'test_integrity.py' -v

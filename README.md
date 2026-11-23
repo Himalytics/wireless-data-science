@@ -4,6 +4,8 @@
 
 A progressive portfolio of empirical studies: define a product question, audit the observations, compare justified methods, quantify uncertainty and explain the decision the evidence supports. Each project includes runnable Python, an executed notebook, saved evaluation results, reproducible scientific figures and a detailed builder's guide.
 
+**Project 05 · Response is not uplift.** On 210,123 held-out Criteo benchmark rows at a hypothetical 20% capacity, uplift beat expected random allocation but did not establish an advantage over response ranking: paired difference −0.16 visit contrast per 1,000 eligible users (conditional 95% interval −1.36 to 1.37). Estimator sensitivity materially changes the random-comparison magnitude. [Study and Mac instructions](projects/05_uplift_policy/README.md) · [Findings](projects/05_uplift_policy/RESULTS_REPORT.md) · [Executed notebook](projects/05_uplift_policy/analysis.ipynb) · [Builder's guide](projects/05_uplift_policy/BUILDERS_GUIDE.md). These advertising benchmark contrasts are not original campaign effects or telecom retention outcomes.
+
 **Project 04 · Forecast interval reliability.** At four weeks, rolling and adaptive calibration both covered 42 of 54 evaluation weeks. The adaptive intervals averaged 602 more reports in width. [Study and run instructions](projects/04_interval_reliability/README.md) · [Findings](projects/04_interval_reliability/RESULTS_REPORT.md) · [Executed notebook](projects/04_interval_reliability/analysis.ipynb)
 
 [Projects](#projects) · [Run Project 1](#run-project-1) · [Roadmap](docs/ROADMAP.md) · [Scientific standard](docs/SCIENTIFIC_STANDARD.md) · [Sources](sources/CATALOG.md)
@@ -14,6 +16,9 @@ A progressive portfolio of empirical studies: define a product question, audit t
 |---|---|---|
 | [01 · Churn risk](projects/01_churn_risk/README.md) | Can we trust churn-risk probabilities? Nested group-aware tuning and calibration; ranking, probability error and capacity analysis. | Built and evaluated · October 26, 2026 |
 | [02 · Complaint-volume forecasting](projects/02_complaint_forecasting/README.md) | Can ML improve weekly complaint forecasts? Direct multi-horizon count forecasting, rolling-origin residual intervals, temporal evaluation and block-bootstrap uncertainty. | Built and evaluated · November 2, 2026 |
+| [03 · Geographic network profiles](https://github.com/Himalytics/wireless-data-science/pull/2) | Network-experience profiles, stability and geographic replication. | Evaluated November 9 · separate review pending; not merged |
+| [04 · Forecast interval reliability](projects/04_interval_reliability/README.md) | Rolling/adaptive calibration, coverage, width and horizon sensitivity. | Built and evaluated November 16 · main |
+| [05 · Campaign uplift policy](projects/05_uplift_policy/README.md) | Grouped model selection, held-out IPW/DR evaluation and profile-cluster uncertainty. | Built and evaluated November 23 |
 
 The [twelve-project roadmap](docs/ROADMAP.md) progresses through forecasting, geographic analysis, uplift, experimentation, customer value, recommendation and NLP. Planned work is not presented as an evaluated result.
 

@@ -1,0 +1,9 @@
+{
+  "selected_pair_refitted": true,
+  "additional_fits": 2,
+  "max_absolute_prediction_error": 4.9995410589254163e-11,
+  "tolerance": 1e-09,
+  "full_record_duplicate_member_rows": 8263,
+  "distinct_profiles": 693797,
+  "python_execution": "Linux only"
+}

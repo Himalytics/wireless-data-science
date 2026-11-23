@@ -1,0 +1,72 @@
+{
+  "full_frozen_input_runs": 2,
+  "comparison": "decompressed CSV content",
+  "results": [
+    {
+      "file": "sensitivity.csv",
+      "first": "3c185d9cb4ba11e099f5f2514fb9274eb9f034a71c44f1d72e1746bebdf8515d",
+      "repeat": "3c185d9cb4ba11e099f5f2514fb9274eb9f034a71c44f1d72e1746bebdf8515d",
+      "identical": true
+    },
+    {
+      "file": "policies.csv",
+      "first": "2b57591a915ba1dfb05cbbb5cbbbbcae8a157422e4e6a84551f68a8f1684ff17",
+      "repeat": "2b57591a915ba1dfb05cbbb5cbbbbcae8a157422e4e6a84551f68a8f1684ff17",
+      "identical": true
+    },
+    {
+      "file": "selection.csv",
+      "first": "ce18b9ec91665c1f945a67ef763a519ff0ee4035110f8d2dc10eeabe6b9a95b8",
+      "repeat": "ce18b9ec91665c1f945a67ef763a519ff0ee4035110f8d2dc10eeabe6b9a95b8",
+      "identical": true
+    },
+    {
+      "file": "dr_comparisons.csv",
+      "first": "5b266dcb8955f34c2e92f95e27e6e1446cbaa24879f2c4697cc87fb3cc819352",
+      "repeat": "5b266dcb8955f34c2e92f95e27e6e1446cbaa24879f2c4697cc87fb3cc819352",
+      "identical": true
+    },
+    {
+      "file": "balance.csv",
+      "first": "95caf3e9a64fa354982c6783e722663b726f818e382adaac7ba5262fd812b67d",
+      "repeat": "95caf3e9a64fa354982c6783e722663b726f818e382adaac7ba5262fd812b67d",
+      "identical": true
+    },
+    {
+      "file": "paired_comparisons.csv",
+      "first": "a350cf0e45e1335fafc436fd2262469fea8e78b89950c31697d7cce4458d8bc3",
+      "repeat": "a350cf0e45e1335fafc436fd2262469fea8e78b89950c31697d7cce4458d8bc3",
+      "identical": true
+    },
+    {
+      "file": "audit.csv",
+      "first": "f28a27fb58138d17d39b5a4f1ce46f5685ee07b94eda8ab0f39ed6f86debc95a",
+      "repeat": "f28a27fb58138d17d39b5a4f1ce46f5685ee07b94eda8ab0f39ed6f86debc95a",
+      "identical": true
+    },
+    {
+      "file": "deciles.csv",
+      "first": "15b6282613a146e3263f76c6e9a354b47434d9b9f12e6f73e538ba2fe214e081",
+      "repeat": "15b6282613a146e3263f76c6e9a354b47434d9b9f12e6f73e538ba2fe214e081",
+      "identical": true
+    },
+    {
+      "file": "capacity.csv",
+      "first": "03260729b48bcdf3c6c968ef9dc41c4d4a621a01d23fad5c4d9e654b8b972b49",
+      "repeat": "03260729b48bcdf3c6c968ef9dc41c4d4a621a01d23fad5c4d9e654b8b972b49",
+      "identical": true
+    },
+    {
+      "file": "predictions.csv.gz",
+      "first": "bb02fe3aa4ca4efe03f78ac567de9b061b424bd47d12d2a18352a174a819a732",
+      "repeat": "bb02fe3aa4ca4efe03f78ac567de9b061b424bd47d12d2a18352a174a819a732",
+      "identical": true
+    },
+    {
+      "file": "splits.csv.gz",
+      "first": "1a7088efc9fd391e0964a3e4acac05704f2998e2bd775bcc8457b4ee6e5d23be",
+      "repeat": "1a7088efc9fd391e0964a3e4acac05704f2998e2bd775bcc8457b4ee6e5d23be",
+      "identical": true
+    }
+  ]
+}

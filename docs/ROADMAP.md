@@ -1,14 +1,14 @@
 # Twelve-project Data Science roadmap
 
-The series started October 26, 2026. Projects 1 and 2 were built and evaluated October 26 and November 2, 2026. The next scheduled build is project 3 on November 9, 2026. Each release must stand on observed data and a defensible scientific question. Future sources remain feasibility gates until their access, licence, fields, and evaluation suitability have been checked.
+The series started October 26, 2026. Reconciled November 23: projects 1, 2 and 4 were already integrated on main; project 3 was evaluated November 9 and remains in [its separate draft review](https://github.com/Himalytics/wireless-data-science/pull/2). This release adds evaluated project 5 without duplicating or renumbering that pending study. Next new study: project 6 on November 30. Each release must stand on observed data and a defensible scientific question. Future sources remain feasibility gates until access, licence, fields and suitability have been checked.
 
 | Project | Planned date | Scientific question | Main technique and evidence |
 |---|---|---|---|
 | 1 | Oct 26, 2026 (built) | Can we trust telecom churn-risk probabilities? | UCI Iranian Churn; nested model comparison, calibration, uncertainty, feature-availability sensitivity, capacity/cost assumptions |
 | [2](../projects/02_complaint_forecasting/README.md) | Nov 2, 2026 (built) | How predictable are telecom complaint volumes? | Observed FCC wireless phone reports; direct multi-horizon count forecasting, rolling-origin residual intervals, block-bootstrap uncertainty; negative ML result retained |
-| 3 | Nov 9 | Which markets have distinct network-experience profiles? | Ookla/Census where a valid geographic/vintage join exists; stable clustering, sampling bias, segment interpretation |
-| 4 | Nov 16 | When do forecast uncertainty intervals fail? | Real FCC time periods; conformal or other justified interval methods, coverage by period/group, shift sensitivity |
-| 5 | Nov 23 | Which customers respond because of a campaign? | Public randomized Criteo Uplift data; treatment-effect modelling, baseline policy comparison, uncertainty; explicitly a non-telecom method demonstration |
+| [3](https://github.com/Himalytics/wireless-data-science/pull/2) | Nov 9 (evaluated; separate review pending) | Which markets have distinct network-experience profiles? | Ookla/Census profiles, stability and replication; not integrated on main |
+| [4](../projects/04_interval_reliability/README.md) | Nov 16 (evaluated; main) | When do forecast uncertainty intervals fail? | Real FCC periods; rolling/adaptive interval calibration, coverage, width and horizon sensitivity |
+| [5](../projects/05_uplift_policy/README.md) | Nov 23 (evaluated; current release) | Does uplift beat random and response policies at a fixed capacity? | Criteo v2.1; grouped selection/test, IPW/DR evaluation, profile uncertainty and sensitivity; non-telecom privacy-altered benchmark only |
 | 6 | Nov 30 | How confidently can we evaluate an experiment? | Suitable real randomized data; effect estimates, precision, heterogeneity, and multiple-comparison discipline; no invented event ordering or pre-period fields |
 | 7 | Dec 7 | Can repeat purchases and future customer value be forecast? | UCI Online Retail; probabilistic repeat-purchase/value models, temporal holdout, returns/wholesale sensitivity; explicitly retail-method transfer |
 | 8 | Dec 14 | Does a recommender beat popularity without leakage? | Observed transaction interactions; temporal ranking evaluation, cold-start analysis, coverage, uncertainty |
