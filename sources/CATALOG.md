@@ -13,4 +13,6 @@ This catalogue supplies starting points. Recheck the current source, licence, ac
 
 A review-text source for project 10 will be selected and verified before implementation. Do not fabricate narratives from structured FCC issue labels or assume access to an account-gated dataset.
 
+Project 5 verified publisher-hosted Criteo corrected **v2.1** access, fields, CC BY-NC-SA 4.0 terms, revision and SHA256 on November 23, 2026. Its [data card](../projects/05_uplift_policy/DATA_CARD.md) records the v1 advertiser-leakage erratum and the distinct limitation that nonuniform privacy subsampling prevents original-population incrementality recovery. Results remain advertising-benchmark method evidence, not telecom treatment effects.
+
 Project 2 verified FCC dataset `3xyp-aqkj`, public-domain metadata ID `USGOV_WORKS`, API access and documented submission timestamps on November 2, 2026. Its [data card](../projects/02_complaint_forecasting/DATA_CARD.md) records the exact wireless phone scope, UTC date audit, anonymous source snapshot and historical-publication-vintage limitation.

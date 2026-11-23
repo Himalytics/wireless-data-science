@@ -1,0 +1,19 @@
+{
+  "locked_before_test_evaluation": "2026-11-23",
+  "question": "At a hypothetical 20% advertising assignment capacity, does estimated uplift improve released-benchmark visit contrast over random targeting and response ranking?",
+  "technique": "T-learner uplift ranking with held-out inverse-propensity policy evaluation",
+  "seed": 20261123,
+  "sample": "SplitMix64(source row ordinal) modulo 20 equals zero; all source rows scanned",
+  "split": "Identical f0:f11 profiles hashed together; hash modulo 100: train <50, validation 50:69, test >=70",
+  "outcome": "visit",
+  "predictors": ["f0","f1","f2","f3","f4","f5","f6","f7","f8","f9","f10","f11"],
+  "excluded": {"conversion": "post-assignment outcome", "exposure": "post-assignment compliance variable", "treatment": "assignment, never a baseline ranking feature"},
+  "models": {"logistic_t": [0.1,1.0], "boosted_t_leaves": [7,15], "boosting_iterations":100},
+  "selection": "Highest validation IPW incremental visits per eligible user at top 20%; no test refit or selection",
+  "primary": "Paired test uplift-policy minus 20% random allocation IPW contrast; also compare response ranking",
+  "propensity": "Training assignment share only; sensitivity to 0.85 and training-only logistic assignment model",
+  "uncertainty": "500 Poisson(1) identical-profile cluster multiplier replicates, percentile 95%, conditional on fixed fits, ranking and assignment estimate; pointwise, not simultaneous",
+  "capacities": [0.1,0.2,0.4,0.6,0.8,1.0],
+  "sensitivity": ["DR score with fixed independent training-only outcome models", "published approximate 0.85 assignment share", "covariate propensity", "10% and 40% capacity"],
+  "estimand_limit": "Privacy-altered released advertising benchmark contrast, not original experiment ITT, individual causal truth, retention uplift or employer impact"
+}

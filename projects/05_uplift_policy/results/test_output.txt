@@ -1,0 +1,16 @@
+test_allowed_predictors_and_protocol_identity (test_integrity.Integrity.test_allowed_predictors_and_protocol_identity) ... ok
+test_capacity_and_outcome_blind_ranking (test_integrity.Integrity.test_capacity_and_outcome_blind_ranking) ... ok
+test_estimator_sensitivity_recomputed (test_integrity.Integrity.test_estimator_sensitivity_recomputed) ... ok
+test_executed_notebook (test_integrity.Integrity.test_executed_notebook) ... ok
+test_group_boundaries (test_integrity.Integrity.test_group_boundaries) ... ok
+test_ipw_and_dr_algebra (test_integrity.Integrity.test_ipw_and_dr_algebra) ... ok
+test_policy_values_and_paired_difference (test_integrity.Integrity.test_policy_values_and_paired_difference) ... ok
+test_profile_multiplier_reproducibility (test_integrity.Integrity.test_profile_multiplier_reproducibility) ... ok
+test_selection_is_validation_only (test_integrity.Integrity.test_selection_is_validation_only) ... ok
+test_source_identity (test_integrity.Integrity.test_source_identity) ... ok
+test_support_and_intervals (test_integrity.Integrity.test_support_and_intervals) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 1.495s
+
+OK
